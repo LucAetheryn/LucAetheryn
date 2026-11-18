@@ -1,7 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-label="Creator workstation">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-label="Stellar Universe Creator Workstation">
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080D1B"/><stop offset=".55" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/></linearGradient>
- <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#06B6FF"><animate attributeName="stop-color" values="#06B6FF;#7C3AED;#EC4899;#06B6FF" dur="8s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#EC4899"><animate attributeName="stop-color" values="#EC4899;#06B6FF;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="stars" width="110" height="90" patternUnits="userSpaceOnUse"><circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/><circle cx="72" cy="54" r=".9" fill="#06B6FF" opacity=".8"/><circle cx="95" cy="12" r="1" fill="#EC4899" opacity=".7"/></pattern>
-</defs><rect width="1000" height="280" rx="20" fill="url(#bg)"/><rect x="240" y="45" width="520" height="160" rx="13" fill="#182542" stroke="#06B6FF" stroke-width="2"/><rect x="255" y="60" width="490" height="130" rx="7" fill="#080D1B"/><path d="M500 205 v30 m-95 0 h190" stroke="#8293B5" stroke-width="8" stroke-linecap="round"/><path d="M280 105 C360 40 430 170 510 95 S650 150 720 80" fill="none" stroke="url(#grad)" stroke-width="4"/><circle cx="500" cy="125" r="25" fill="#7C3AED" opacity=".4"/><rect x="365" y="245" width="270" height="12" rx="6" fill="#425273"/><text x="500" y="25" text-anchor="middle" fill="#A9B9D8" font-family="Arial" font-size="15" letter-spacing="3">IDEAS → DESIGN → BUILD</text></svg>
+  <linearGradient id="desk-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#080D1B"/><stop offset=".55" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/>
+  </linearGradient>
+  <linearGradient id="desk-grad" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#06B6FF"/><stop offset=".5" stop-color="#7C3AED"/><stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <linearGradient id="desk-screen" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#101B35"/><stop offset="1" stop-color="#090D1C"/>
+  </linearGradient>
+  <filter id="desk-glow">
+    <feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="desk-stars" width="100" height="80" patternUnits="userSpaceOnUse">
+    <circle cx="13" cy="18" r="1.2" fill="#DCEBFF" opacity=".7"/>
+    <circle cx="72" cy="54" r="1" fill="#06B6FF" opacity=".8"/>
+    <circle cx="90" cy="12" r="1" fill="#EC4899" opacity=".7"/>
+  </pattern>
+</defs>
+
+<rect width="1000" height="280" rx="20" fill="url(#desk-bg)"/>
+<rect width="1000" height="280" rx="20" fill="url(#desk-stars)"/>
+
+<text x="500" y="27" text-anchor="middle" fill="#A9B9D8" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">IDEAS → DESIGN → BUILD</text>
+
+<g opacity=".55" fill="none" stroke="#7C3AED">
+  <circle cx="160" cy="135" r="65" stroke-opacity=".35"/>
+  <circle cx="160" cy="135" r="85" stroke-opacity=".2" stroke-dasharray="3 8"/>
+  <circle cx="840" cy="135" r="65" stroke-opacity=".35"/>
+  <circle cx="840" cy="135" r="85" stroke-opacity=".2" stroke-dasharray="3 8"/>
+</g>
+
+<g>
+  <rect x="240" y="48" width="520" height="158" rx="14" fill="#182542" stroke="#06B6FF" stroke-width="2"/>
+  <rect x="253" y="61" width="494" height="132" rx="7" fill="url(#desk-screen)"/>
+  <path d="M270 82 H420 M270 93 H365 M270 104 H395" stroke="#425A82" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+  <path d="M280 143 C355 65 430 175 510 112 S650 158 720 90" fill="none" stroke="url(#desk-grad)" stroke-width="4" filter="url(#desk-glow)"/>
+  <circle cx="510" cy="112" r="25" fill="#7C3AED" opacity=".2"/>
+  <circle cx="510" cy="112" r="8" fill="#06B6FF" filter="url(#desk-glow)"/>
+  <path d="M500 206 V235 M500 235 H405 M500 235 H595" stroke="#8293B5" stroke-width="7" stroke-linecap="round"/>
+  <rect x="365" y="244" width="270" height="11" rx="5.5" fill="#425273"/>
+  <path d="M380 260 H620" stroke="#06B6FF" stroke-opacity=".3" stroke-width="2"/>
+</g>
+
+<g transform="translate(90 105)">
+  <rect width="75" height="55" rx="8" fill="#151F38" stroke="#7C3AED" stroke-opacity=".6"/>
+  <path d="M13 18 H62 M13 27 H49 M13 36 H56" stroke="#06B6FF" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+  <circle cx="61" cy="10" r="3" fill="#EC4899"/>
+</g>
+<g transform="translate(835 105)">
+  <rect width="75" height="55" rx="8" fill="#151F38" stroke="#EC4899" stroke-opacity=".6"/>
+  <path d="M13 18 H62 M13 27 H49 M13 36 H56" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+  <circle cx="61" cy="10" r="3" fill="#06B6FF"/>
+</g>
+
+<g fill="#DCEBFF">
+  <circle cx="205" cy="65" r="2"/><circle cx="795" cy="65" r="2"/>
+  <circle cx="185" cy="215" r="1.5"/><circle cx="815" cy="215" r="1.5"/>
+</g>
+<path d="M0 276 H1000" stroke="url(#desk-grad)" stroke-width="3"/>
+</svg>
