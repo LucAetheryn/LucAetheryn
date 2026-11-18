@@ -1,7 +1,167 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="410" viewBox="0 0 600 410" role="img" aria-label="Stellar Universe — mobile header">
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080D1B"/><stop offset=".55" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/></linearGradient>
- <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#06B6FF"><animate attributeName="stop-color" values="#06B6FF;#7C3AED;#EC4899;#06B6FF" dur="8s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#EC4899"><animate attributeName="stop-color" values="#EC4899;#06B6FF;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="stars" width="110" height="90" patternUnits="userSpaceOnUse"><circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/><circle cx="72" cy="54" r=".9" fill="#06B6FF" opacity=".8"/><circle cx="95" cy="12" r="1" fill="#EC4899" opacity=".7"/></pattern>
-</defs><rect width="600" height="410" rx="24" fill="url(#bg)"/><rect width="600" height="410" rx="24" fill="url(#stars)"/><circle cx="300" cy="112" r="54" fill="url(#grad)" filter="url(#glow)"/><ellipse cx="300" cy="112" rx="112" ry="39" fill="none" stroke="#06B6FF" stroke-width="2" transform="rotate(-22 300 112)"/><path d="M300 50 l6 17 17 6 -17 6 -6 17 -6 -17 -17 -6 17 -6z" fill="#fff"/><text x="300" y="235" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="38" font-weight="700">LUCKY PRADITYA</text><text x="300" y="282" text-anchor="middle" fill="#06B6FF" font-family="Arial,sans-serif" font-size="21">Visual &amp; AI Engineer Enthusiast</text><text x="300" y="330" text-anchor="middle" fill="#A9B9D8" font-family="Arial,sans-serif" font-size="15">Designing ideas • Building experiences</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="410" viewBox="0 0 600 410" role="img" aria-label="Lucky Praditya — Stellar Universe Mobile">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080D1B"/>
+      <stop offset=".55" stop-color="#11152D"/>
+      <stop offset="1" stop-color="#24113D"/>
+    </linearGradient>
+
+    <linearGradient id="planet" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#06B6FF"/>
+      <stop offset=".5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#06B6FF"/>
+      <stop offset=".5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <!-- Animated tagline gradient -->
+    <linearGradient id="taglineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#06B6FF">
+        <animate attributeName="stop-color"
+          values="#06B6FF;#7C3AED;#EC4899;#06B6FF"
+          dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#EC4899">
+        <animate attributeName="stop-color"
+          values="#EC4899;#06B6FF;#7C3AED;#EC4899"
+          dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <radialGradient id="glow">
+      <stop stop-color="#7C3AED" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="clip">
+      <rect width="600" height="410" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="600" height="410" fill="url(#bg)"/>
+    <circle cx="300" cy="112" r="145" fill="url(#glow)"/>
+
+    <!-- Background stars -->
+    <g fill="#DCEBFF">
+      <circle cx="65" cy="65" r="1.5"/>
+      <circle cx="510" cy="55" r="1.3"/>
+      <circle cx="90" cy="190" r="1"/>
+      <circle cx="530" cy="205" r="1.4"/>
+      <circle cx="145" cy="320" r="1.2"/>
+      <circle cx="470" cy="350" r="1"/>
+    </g>
+
+    <!-- Twinkling stars -->
+    <g fill="#06B6FF">
+      <circle cx="115" cy="125" r="1.8">
+        <animate attributeName="opacity"
+          values=".2;1;.2" dur="3s"
+          repeatCount="indefinite"/>
+      </circle>
+      <circle cx="490" cy="145" r="1.8">
+        <animate attributeName="opacity"
+          values="1;.2;1" dur="4s"
+          repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Planet -->
+    <g transform="translate(300 112)">
+      <ellipse rx="132" ry="45" fill="none"
+        stroke="#7C3AED" stroke-width="1.5"
+        opacity=".3" transform="rotate(-22)"/>
+
+      <!-- Rear ring -->
+      <ellipse rx="105" ry="37" fill="none"
+        stroke="url(#ring)" stroke-width="8"
+        opacity=".35" transform="rotate(-22)"/>
+
+      <!-- Planet surface -->
+      <circle r="51" fill="url(#planet)" filter="url(#blur)"/>
+
+      <ellipse cx="-17" cy="-22" rx="15" ry="7"
+        fill="#fff" opacity=".18"
+        transform="rotate(-35)"/>
+
+      <path d="M-35 18 Q0 38 36 8"
+        fill="none" stroke="#fff"
+        stroke-width="2" opacity=".15"/>
+
+      <!-- Animated front ring -->
+      <ellipse rx="105" ry="37" fill="none"
+        stroke="url(#ring)" stroke-width="3.5"
+        opacity=".95" transform="rotate(-22)">
+        <animateTransform attributeName="transform"
+          type="rotate"
+          from="-22" to="338"
+          dur="42s"
+          repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Orbiting star -->
+      <g>
+        <path d="M0 -9 L3 -3 L9 0 L3 3 L0 9 L-3 3 L-9 0 L-3 -3Z"
+          fill="#fff" filter="url(#blur)"/>
+
+        <animateMotion dur="10s"
+          repeatCount="indefinite"
+          path="M-120,-20 A125,45 0 1,1 120,20 A125,45 0 1,1 -120,-20"/>
+      </g>
+    </g>
+
+    <!-- Decorative star -->
+    <path d="M505 82 l5 13 13 5 -13 5 -5 13 -5 -13 -13 -5 13 -5Z"
+      fill="#fff" opacity=".9">
+      <animate attributeName="opacity"
+        values=".35;1;.35"
+        dur="3s"
+        repeatCount="indefinite"/>
+    </path>
+
+    <!-- Main identity -->
+    <text x="300" y="235" text-anchor="middle"
+      fill="#A9B9D8"
+      font-family="Arial,sans-serif"
+      font-size="13" letter-spacing="4">
+      STELLAR UNIVERSE
+    </text>
+
+    <text x="300" y="282" text-anchor="middle"
+      fill="#fff"
+      font-family="Arial,sans-serif"
+      font-size="39" font-weight="700">
+      LUCKY PRADITYA
+    </text>
+
+    <!-- Animated color-changing tagline -->
+    <text x="300" y="321" text-anchor="middle"
+      fill="url(#taglineGrad)"
+      font-family="Arial,sans-serif"
+      font-size="20" font-weight="700">
+      Visual &amp; AI Engineer Enthusiast
+    </text>
+
+    <text x="300" y="357" text-anchor="middle"
+      fill="#A9B9D8"
+      font-family="Arial,sans-serif"
+      font-size="14">
+      Designing ideas • Building experiences
+    </text>
+
+    <rect x="245" y="378" width="110" height="3"
+      rx="2" fill="url(#ring)"/>
+  </g>
+</svg>
