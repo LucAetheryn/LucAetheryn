@@ -1,7 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="125" viewBox="0 0 600 125" role="img" aria-label="GUESTBOOK">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="440" viewBox="0 0 600 440" role="img" aria-label="Guestbook Mobile Section Panel">
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080D1B"/><stop offset=".55" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/></linearGradient>
- <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#06B6FF"><animate attributeName="stop-color" values="#06B6FF;#7C3AED;#EC4899;#06B6FF" dur="8s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#EC4899"><animate attributeName="stop-color" values="#EC4899;#06B6FF;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="stars" width="110" height="90" patternUnits="userSpaceOnUse"><circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/><circle cx="72" cy="54" r=".9" fill="#06B6FF" opacity=".8"/><circle cx="95" cy="12" r="1" fill="#EC4899" opacity=".7"/></pattern>
-</defs><rect width="600" height="125" rx="16" fill="#0D1427"/><path d="M0 122 H600" stroke="url(#grad)" stroke-width="3"/><text x="30" y="42" fill="#06B6FF" font-family="Arial" font-size="15" letter-spacing="3">08 / STELLAR UNIVERSE</text><text x="30" y="80" fill="#F4F7FF" font-family="Arial" font-size="29" font-weight="700">GUESTBOOK</text><text x="570" y="72" text-anchor="end" fill="#9AA8C7" font-family="Arial" font-size="15">Leave a note from your corner of the universe.</text></svg>
+  <linearGradient id="gm-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#080D1B"/>
+    <stop offset=".58" stop-color="#14182F"/>
+    <stop offset="1" stop-color="#24113D"/>
+  </linearGradient>
+  <linearGradient id="gm-line">
+    <stop stop-color="#06B6FF"/>
+    <stop offset=".5" stop-color="#7C3AED"/>
+    <stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <pattern id="gm-stars" width="85" height="75" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="18" r="1.2" fill="#DCEBFF" opacity=".7"/>
+    <circle cx="60" cy="48" r="1" fill="#06B6FF" opacity=".7"/>
+  </pattern>
+</defs>
+<rect width="600" height="440" rx="20" fill="url(#gm-bg)"/>
+<rect width="600" height="440" rx="20" fill="url(#gm-stars)"/>
+<circle cx="510" cy="95" r="100" fill="#7C3AED" opacity=".08"/>
+<circle cx="510" cy="95" r="72" fill="none" stroke="#7C3AED" stroke-opacity=".3" stroke-dasharray="4 8"/>
+
+<g text-anchor="middle">
+  <text x="300" y="55" fill="#06B6FF" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">A MESSAGE ACROSS THE STARS</text>
+  <text x="300" y="103" fill="#F4F7FF" font-family="Arial,sans-serif" font-size="30" font-weight="700">YOUR WORDS MATTER.</text>
+  <text x="300" y="133" fill="#A9B6D2" font-family="Arial,sans-serif" font-size="14">Leave a little light for the next explorer.</text>
+</g>
+
+<g transform="translate(72 165)">
+  <rect width="456" height="174" rx="18" fill="#17213A" stroke="#6679A7" stroke-opacity=".5"/>
+  <path d="M0 18 Q0 0 18 0 H438 Q456 0 456 18" fill="none" stroke="url(#gm-line)" stroke-width="3"/>
+  <circle cx="38" cy="38" r="17" fill="#06B6FF" fill-opacity=".17" stroke="#06B6FF" stroke-opacity=".65"/>
+  <path d="M30 38 Q38 27 46 38 Q38 49 30 38Z" fill="#9DE5FF"/>
+  <text x="67" y="34" fill="#EAF3FF" font-family="Arial,sans-serif" font-size="13" font-weight="700">A NOTE FROM THE COSMOS</text>
+  <text x="67" y="53" fill="#8798BA" font-family="Arial,sans-serif" font-size="10" letter-spacing="1">A FELLOW EXPLORER</text>
+  <text x="26" y="100" fill="#D9E4F8" font-family="Arial,sans-serif" font-size="15">“Keep creating, keep dreaming,</text>
+  <text x="26" y="125" fill="#D9E4F8" font-family="Arial,sans-serif" font-size="15">and keep reaching for the stars.”</text>
+  <path d="M26 145 H430" stroke="#7D8BAA" stroke-opacity=".3"/>
+</g>
+
+<g text-anchor="middle">
+  <text x="300" y="384" fill="#06B6FF" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">CONNECT · SHARE · INSPIRE</text>
+  <text x="300" y="410" fill="#8795B2" font-family="Arial,sans-serif" font-size="11">ONE MESSAGE CAN MAKE A DIFFERENCE</text>
+</g>
+<path d="M0 436 H600" stroke="url(#gm-line)" stroke-width="4"/>
+</svg>
