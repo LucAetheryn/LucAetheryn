@@ -2,7 +2,7 @@ name: Update Guestbook
 
 on:
   issues:
-    types: [opened, edited, deleted]
+    types: [opened, edited, deleted, labeled, unlabeled]
   workflow_dispatch:
 
 concurrency:
@@ -19,7 +19,13 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       (
         github.event_name == 'issues' &&
-        contains(github.event.issue.labels.*.name, 'guestbook')
+        (
+          contains(github.event.issue.labels.*.name, 'guestbook') ||
+          (
+            github.event.action == 'unlabeled' &&
+            github.event.label.name == 'guestbook'
+          )
+        )
       )
 
     runs-on: ubuntu-latest
