@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="640" height="118"
+     viewBox="0 0 640 118"
+     role="img"
+     aria-label="AI Toolbox — My AI Universe">
+
+  <defs>
+    <linearGradient id="m-ai-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080D1B"/>
+      <stop offset=".55" stop-color="#11152D"/>
+      <stop offset="1" stop-color="#211333"/>
+    </linearGradient>
+
+    <linearGradient id="m-ai-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06B6FF"/>
+      <stop offset=".52" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <radialGradient id="m-ai-glow">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="m-ai-soft-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="m-ai-clip">
+      <rect width="640" height="118" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#m-ai-clip)">
+    <rect width="640" height="118" fill="url(#m-ai-bg)"/>
+    <rect width="640" height="118" fill="url(#m-ai-glow)"/>
+
+    <!-- Background atmosphere -->
+    <circle cx="550" cy="58" r="95" fill="#7C3AED" opacity=".08"/>
+    <circle cx="600" cy="90" r="65" fill="#06B6FF" opacity=".045"/>
+
+    <!-- Stars -->
+    <g fill="#DCEBFF">
+      <circle cx="180" cy="17" r="1" opacity=".65"/>
+      <circle cx="250" cy="94" r="1.1" opacity=".5"/>
+      <circle cx="345" cy="20" r="1" opacity=".6"/>
+      <circle cx="420" cy="97" r="1.1" opacity=".55"/>
+      <circle cx="500" cy="15" r="1" opacity=".65"/>
+      <circle cx="610" cy="28" r="1.1" opacity=".6"/>
+    </g>
+
+    <!-- Left accent -->
+    <rect x="0" y="17" width="4" height="84" rx="2"
+          fill="url(#m-ai-accent)"/>
+    <rect x="0" y="17" width="4" height="84" rx="2"
+          fill="#A855F7" opacity=".35"
+          filter="url(#m-ai-soft-glow)"/>
+
+    <!-- Section identifier -->
+    <text x="25" y="32"
+          fill="#A78BFA"
+          font-family="Arial, sans-serif"
+          font-size="9"
+          font-weight="700"
+          letter-spacing="2">02 / AI TOOLBOX</text>
+
+    <!-- Main title -->
+    <text x="24" y="66"
+          fill="#F4F2FF"
+          font-family="Arial, sans-serif"
+          font-size="23"
+          font-weight="700"
+          letter-spacing=".3">MY AI UNIVERSE</text>
+
+    <!-- Supporting line -->
+    <text x="25" y="87"
+          fill="#A9B9D8"
+          font-family="Arial, sans-serif"
+          font-size="10.5">The tools behind the ideas.</text>
+
+    <rect x="25" y="97" width="83" height="2" rx="1"
+          fill="url(#m-ai-accent)" opacity=".8"/>
+
+    <!-- Compact orbital illustration -->
+    <g transform="translate(535 57)">
+      <circle r="43" fill="url(#m-ai-glow)"/>
+
+      <ellipse rx="70" ry="21"
+               fill="none" stroke="#7C3AED"
+               stroke-width="1.1" opacity=".75"
+               transform="rotate(-25)"/>
+
+      <ellipse rx="57" ry="31"
+               fill="none" stroke="#06B6FF"
+               stroke-width="1" opacity=".55"
+               transform="rotate(42)"/>
+
+      <ellipse rx="45" ry="38"
+               fill="none" stroke="#EC4899"
+               stroke-width="1" opacity=".45"
+               transform="rotate(-62)"/>
+
+      <!-- Central core -->
+      <circle r="19" fill="#11152D"
+              stroke="url(#m-ai-accent)" stroke-width="1.6"
+              filter="url(#m-ai-soft-glow)"/>
+      <circle r="14" fill="none"
+              stroke="#FFFFFF" stroke-opacity=".14"/>
+
+      <path d="M-7 -4 L0 -10 L7 -4 L7 4 L0 10 L-7 4 Z"
+            fill="none" stroke="#E9D5FF"
+            stroke-width="1.5" stroke-linejoin="round"/>
+      <circle r="2.5" fill="#06B6FF"
+              filter="url(#m-ai-soft-glow)"/>
+
+      <!-- Orbiting nodes -->
+      <circle cx="-51" cy="-18" r="4.5"
+              fill="#17152D" stroke="#EC4899" stroke-width="1.3"/>
+      <circle cx="40" cy="-30" r="4.5"
+              fill="#17152D" stroke="#06B6FF" stroke-width="1.3"/>
+      <circle cx="57" cy="13" r="4.5"
+              fill="#17152D" stroke="#A855F7" stroke-width="1.3"/>
+      <circle cx="-28" cy="34" r="4"
+              fill="#17152D" stroke="#06B6FF" stroke-width="1.2"/>
+
+      <circle cx="-51" cy="-18" r="1.7" fill="#EC4899"/>
+      <circle cx="40" cy="-30" r="1.7" fill="#06B6FF"/>
+      <circle cx="57" cy="13" r="1.7" fill="#A855F7"/>
+      <circle cx="-28" cy="34" r="1.5" fill="#06B6FF"/>
+    </g>
+
+    <!-- Micro label -->
+    <text x="615" y="108"
+          text-anchor="end"
+          fill="#827A9B"
+          font-family="monospace"
+          font-size="6.5"
+          letter-spacing=".8">EXPLORE • CREATE • BUILD</text>
+  </g>
+
+  <rect x=".5" y=".5" width="639" height="117" rx="11.5"
+        fill="none" stroke="#51416B" stroke-opacity=".8"/>
+</svg>
