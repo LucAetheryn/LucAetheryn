@@ -1,13 +1,18 @@
 name: Sign the Stellar Guestbook
 description: Leave a short message on Lucky's profile
-title: "[Guestbook]: "
+title: "[guestbook] hello from "
 labels: ["guestbook"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for stopping by! Your message will appear on the profile after validation.
+        Please keep it friendly and under 180 characters. Links and markdown formatting are removed.
   - type: textarea
     id: message
     attributes:
       label: Your message
-      description: Keep it friendly and under 240 characters.
+      description: A short note from your corner of the universe.
       placeholder: Hello from my corner of the universe...
     validations:
       required: true
