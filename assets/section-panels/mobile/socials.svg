@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="440" viewBox="0 0 600 440" fill="none" role="img" aria-label="Social media connections">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080D1B"/>
+      <stop offset=".6" stop-color="#11152D"/>
+      <stop offset="1" stop-color="#17102B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#06B6FF"/>
+      <stop offset=".55" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1A2743"/>
+      <stop offset="1" stop-color="#11172B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="440" rx="22" fill="url(#bg)"/>
+  <g fill="#DCE8FF">
+    <circle cx="44" cy="45" r="1.5"/><circle cx="155" cy="80" r="1"/>
+    <circle cx="520" cy="55" r="1.5"/><circle cx="560" cy="190" r="1"/>
+    <circle cx="60" cy="340" r="1.2"/><circle cx="520" cy="390" r="1.2"/>
+  </g>
+
+  <text x="300" y="48" text-anchor="middle" fill="#06B6FF" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="4">STELLAR UNIVERSE</text>
+  <text x="300" y="96" text-anchor="middle" fill="#F1F5FF" font-family="Arial,sans-serif" font-size="29" font-weight="800">LET'S CONNECT.</text>
+  <text x="300" y="125" text-anchor="middle" fill="#A6B4D0" font-family="Arial,sans-serif" font-size="14">Find me across these platforms.</text>
+
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(45 158)">
+      <rect width="245" height="94" rx="15" fill="url(#card)" stroke="#344365"/>
+      <rect x="16" y="20" width="54" height="54" rx="15" fill="#202E4A"/>
+      <text x="43" y="55" text-anchor="middle" fill="#F8FAFF" font-size="22" font-weight="800">GH</text>
+      <text x="84" y="43" fill="#F1F5FF" font-size="17" font-weight="700">GitHub</text>
+      <text x="84" y="64" fill="#8FA4C9" font-size="12">Code &amp; projects</text>
+    </g>
+    <g transform="translate(310 158)">
+      <rect width="245" height="94" rx="15" fill="url(#card)" stroke="#344365"/>
+      <rect x="16" y="20" width="54" height="54" rx="15" fill="#382344"/>
+      <text x="43" y="55" text-anchor="middle" fill="#F8FAFF" font-size="22" font-weight="800">IG</text>
+      <text x="84" y="43" fill="#F1F5FF" font-size="17" font-weight="700">Instagram</text>
+      <text x="84" y="64" fill="#8FA4C9" font-size="12">Visual stories</text>
+    </g>
+    <g transform="translate(45 270)">
+      <rect width="245" height="94" rx="15" fill="url(#card)" stroke="#344365"/>
+      <rect x="16" y="20" width="54" height="54" rx="15" fill="#26304A"/>
+      <text x="43" y="55" text-anchor="middle" fill="#F8FAFF" font-size="22" font-weight="800">TK</text>
+      <text x="84" y="43" fill="#F1F5FF" font-size="17" font-weight="700">TikTok</text>
+      <text x="84" y="64" fill="#8FA4C9" font-size="12">Creative moments</text>
+    </g>
+    <g transform="translate(310 270)">
+      <rect width="245" height="94" rx="15" fill="url(#card)" stroke="#344365"/>
+      <rect x="16" y="20" width="54" height="54" rx="15" fill="#17334B"/>
+      <text x="43" y="55" text-anchor="middle" fill="#F8FAFF" font-size="22" font-weight="800">in</text>
+      <text x="84" y="43" fill="#F1F5FF" font-size="17" font-weight="700">LinkedIn</text>
+      <text x="84" y="64" fill="#8FA4C9" font-size="12">Professional network</text>
+    </g>
+  </g>
+
+  <text x="300" y="405" text-anchor="middle" fill="#8293B5" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">ONE CREATIVE JOURNEY · MANY CONNECTIONS</text>
+  <rect x="45" y="425" width="510" height="2" rx="1" fill="url(#accent)" opacity=".8"/>
+</svg>
