@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="1120"
+     viewBox="0 0 1200 1120"
+     role="img"
+     aria-label="Lucky Praditya technology and creative stack">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="55%" stop-color="#11152B"/>
+      <stop offset="100%" stop-color="#17102D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06B6FF"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17233B"/>
+      <stop offset="100%" stop-color="#17152F"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .heading { font-family: Arial,sans-serif; fill:#F1F5FF; font-weight:700; }
+      .sub { font-family: Arial,sans-serif; fill:#91A2C2; }
+      .category { font-family: Arial,sans-serif; fill:#EAF2FF; font-size:18px; font-weight:700; }
+      .item { font-family: Arial,sans-serif; fill:#C5D0E5; font-size:12px; }
+      .panel { fill:url(#panel); stroke:#33415F; stroke-width:1; }
+      .icon { width:34px; height:34px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1120" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <g opacity=".12" fill="none" stroke="#06B6FF">
+    <circle cx="1080" cy="100" r="90"/>
+    <circle cx="1080" cy="100" r="115"/>
+    <circle cx="100" cy="1010" r="100"/>
+    <circle cx="100" cy="1010" r="125"/>
+  </g>
+
+  <text x="40" y="52" class="sub" font-size="11" letter-spacing="4">
+    LUC AETHERYN · PERSONAL TOOLKIT
+  </text>
+  <text x="40" y="105" class="heading" font-size="36">
+    Technology &amp; Creative Stack
+  </text>
+  <text x="40" y="135" class="sub" font-size="14">
+    The tools, technologies and platforms behind my creative journey.
+  </text>
+  <rect x="40" y="155" width="1120" height="2" rx="1" fill="url(#accent)" opacity=".8"/>
+
+  <!-- 01 PROGRAMMING LANGUAGES -->
+  <g transform="translate(30 185)">
+    <rect width="550" height="290" rx="18" class="panel"/>
+    <rect width="4" height="290" rx="2" fill="#06B6FF"/>
+    <text x="25" y="38" class="category">01 / Programming Languages</text>
+    <text x="25" y="60" class="sub" font-size="11">Core languages and web fundamentals</text>
+
+    <g transform="translate(48 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">TypeScript</text>
+    </g>
+    <g transform="translate(178 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">JavaScript</text>
+    </g>
+    <g transform="translate(308 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">HTML5</text>
+    </g>
+    <g transform="translate(438 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">CSS3</text>
+    </g>
+    <g transform="translate(48 180)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Python</text>
+    </g>
+    <g transform="translate(178 180)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Java</text>
+    </g>
+    <g transform="translate(308 180)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Lua</text>
+    </g>
+  </g>
+
+  <!-- 02 FRAMEWORKS -->
+  <g transform="translate(620 185)">
+    <rect width="550" height="290" rx="18" class="panel"/>
+    <rect width="4" height="290" rx="2" fill="#7C3AED"/>
+    <text x="25" y="38" class="category">02 / Frameworks &amp; Libraries</text>
+    <text x="25" y="60" class="sub" font-size="11">Frontend, application and runtime ecosystem</text>
+
+    <g transform="translate(48 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">React</text>
+    </g>
+    <g transform="translate(178 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Vite</text>
+    </g>
+    <g transform="translate(308 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Next.js</text>
+    </g>
+    <g transform="translate(438 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Tailwind CSS</text>
+    </g>
+    <g transform="translate(48 180)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Node.js</text>
+    </g>
+  </g>
+
+  <!-- 03 BACKEND -->
+  <g transform="translate(30 495)">
+    <rect width="550" height="290" rx="18" class="panel"/>
+    <rect width="4" height="290" rx="2" fill="#EC4899"/>
+    <text x="25" y="38" class="category">03 / Backend &amp; Database</text>
+    <text x="25" y="60" class="sub" font-size="11">Data, authentication and cloud storage</text>
+
+    <g transform="translate(48 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Supabase</text>
+    </g>
+    <g transform="translate(178 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">PostgreSQL</text>
+    </g>
+    <g transform="translate(308 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Firebase</text>
+    </g>
+    <g transform="translate(438 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Firestore</text>
+    </g>
+    <g transform="translate(48 180)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/clerk/6C47FF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Clerk</text>
+    </g>
+    <g transform="translate(178 180)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/cloudinary/3448C5"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Cloudinary</text>
+    </g>
+  </g>
+
+  <!-- 04 TOOLS -->
+  <g transform="translate(620 495)">
+    <rect width="550" height="290" rx="18" class="panel"/>
+    <rect width="4" height="290" rx="2" fill="#06B6FF"/>
+    <text x="25" y="38" class="category">04 / Tools &amp; Infrastructure</text>
+    <text x="25" y="60" class="sub" font-size="11">Development workflow and delivery</text>
+
+    <g transform="translate(48 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Git</text>
+    </g>
+    <g transform="translate(178 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">GitHub</text>
+    </g>
+    <g transform="translate(308 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/replit/replit-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Replit</text>
+    </g>
+    <g transform="translate(438 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">VS Code</text>
+    </g>
+    <g transform="translate(48 180)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Actions</text>
+    </g>
+    <g transform="translate(178 180)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/capacitor/119EFF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Capacitor</text>
+    </g>
+    <g transform="translate(308 180)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/pwa/5A0FC8"/>
+      <text x="17" y="51" text-anchor="middle" class="item">PWA</text>
+    </g>
+  </g>
+
+  <!-- 05 CREATIVE -->
+  <g transform="translate(30 805)">
+    <rect width="550" height="290" rx="18" class="panel"/>
+    <rect width="4" height="290" rx="2" fill="#EC4899"/>
+    <text x="25" y="38" class="category">05 / Design &amp; Multimedia</text>
+    <text x="25" y="60" class="sub" font-size="11">Visual design, illustration and motion</text>
+
+    <g transform="translate(48 82)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Figma</text>
+    </g>
+    <g transform="translate(178 82)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/adobephotoshop/31A8FF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Photoshop</text>
+    </g>
+    <g transform="translate(308 82)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/adobeillustrator/FF9A00"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Illustrator</text>
+    </g>
+    <g transform="translate(438 82)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/adobeaftereffects/9999FF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">After Effects</text>
+    </g>
+    <g transform="translate(48 180)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/canva/00C4CC"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Canva</text>
+    </g>
+    <g transform="translate(178 180)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/capcut/FFFFFF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">CapCut</text>
+    </g>
+    <g transform="translate(308 180)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Blender</text>
+    </g>
+    <g transform="translate(438 180)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/alightmotion/FFFFFF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Alight Motion</text>
+    </g>
+  </g>
+
+  <!-- 06 AI TOOLBOX -->
+  <g transform="translate(620 805)">
+    <rect width="550" height="290" rx="18" class="panel"/>
+    <rect width="4" height="290" rx="2" fill="#7C3AED"/>
+    <text x="25" y="38" class="category">06 / AI Toolbox</text>
+    <text x="25" y="60" class="sub" font-size="11">AI assistants, coding and product design</text>
+
+    <g transform="translate(48 82)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/openai/FFFFFF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">ChatGPT</text>
+    </g>
+    <g transform="translate(178 82)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/claude/D97757"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Claude</text>
+    </g>
+    <g transform="translate(308 82)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/googlegemini/8E75FF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Gemini</text>
+    </g>
+    <g transform="translate(438 82)">
+      <image class="icon" xlink:href="https://cdn.simpleicons.org/githubcopilot/FFFFFF"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Copilot</text>
+    </g>
+    <g transform="translate(48 180)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Google Stitch</text>
+    </g>
+    <g transform="translate(178 180)">
+      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/replit/replit-original.svg"/>
+      <text x="17" y="51" text-anchor="middle" class="item">Replit Agent</text>
+    </g>
+  </g>
+</svg>
