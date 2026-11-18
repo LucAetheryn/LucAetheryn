@@ -1,7 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="125" viewBox="0 0 600 125" role="img" aria-label="SELECTED UNIVERSES">
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080D1B"/><stop offset=".55" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/></linearGradient>
- <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#06B6FF"><animate attributeName="stop-color" values="#06B6FF;#7C3AED;#EC4899;#06B6FF" dur="8s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#EC4899"><animate attributeName="stop-color" values="#EC4899;#06B6FF;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="stars" width="110" height="90" patternUnits="userSpaceOnUse"><circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/><circle cx="72" cy="54" r=".9" fill="#06B6FF" opacity=".8"/><circle cx="95" cy="12" r="1" fill="#EC4899" opacity=".7"/></pattern>
-</defs><rect width="600" height="125" rx="16" fill="#0D1427"/><path d="M0 122 H600" stroke="url(#grad)" stroke-width="3"/><text x="30" y="42" fill="#06B6FF" font-family="Arial" font-size="15" letter-spacing="3">02 / STELLAR UNIVERSE</text><text x="30" y="80" fill="#F4F7FF" font-family="Arial" font-size="29" font-weight="700">SELECTED UNIVERSES</text><text x="570" y="72" text-anchor="end" fill="#9AA8C7" font-family="Arial" font-size="15">A growing constellation of ideas, products and experiments.</text></svg>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080D1B"/>
+      <stop offset=".55" stop-color="#11152D"/>
+      <stop offset="1" stop-color="#24113D"/>
+    </linearGradient>
+
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#06B6FF">
+        <animate attributeName="stop-color" values="#06B6FF;#7C3AED;#EC4899;#06B6FF" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#EC4899">
+        <animate attributeName="stop-color" values="#EC4899;#06B6FF;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="stars" width="110" height="90" patternUnits="userSpaceOnUse">
+      <circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/>
+      <circle cx="72" cy="54" r=".9" fill="#06B6FF" opacity=".8"/>
+      <circle cx="95" cy="12" r="1" fill="#EC4899" opacity=".7"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="125" rx="16" fill="url(#bg)"/>
+  <rect width="600" height="125" rx="16" fill="url(#stars)" opacity=".55"/>
+
+  <circle cx="545" cy="25" r="35" fill="#7C3AED" opacity=".07"/>
+  <circle cx="545" cy="25" r="22" fill="none" stroke="#7C3AED" stroke-width=".8" opacity=".25"/>
+
+  <text x="30" y="42" fill="#06B6FF" font-family="Arial, sans-serif" font-size="15" letter-spacing="3">
+    02 / STELLAR UNIVERSE
+  </text>
+
+  <text x="30" y="80" fill="#F4F7FF" font-family="Arial, sans-serif" font-size="29" font-weight="700">
+    SELECTED UNIVERSES
+  </text>
+
+  <text x="570" y="72" text-anchor="end" fill="#9AA8C7" font-family="Arial, sans-serif" font-size="15">
+    A growing constellation of ideas, products and experiments.
+  </text>
+
+  <path d="M0 122 H600" stroke="url(#grad)" stroke-width="3" filter="url(#glow)"/>
+</svg>
