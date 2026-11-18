@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Stellar Universe Guestbook Artwork">
+<defs>
+  <linearGradient id="gb-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#080D1B"/>
+    <stop offset=".55" stop-color="#11152D"/>
+    <stop offset="1" stop-color="#24113D"/>
+  </linearGradient>
+  <linearGradient id="gb-line" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#06B6FF"/>
+    <stop offset=".52" stop-color="#7C3AED"/>
+    <stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <linearGradient id="gb-card" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#182542"/>
+    <stop offset="1" stop-color="#21183B"/>
+  </linearGradient>
+  <filter id="gb-glow">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="gb-stars" width="100" height="80" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="15" r="1.3" fill="#DCEBFF" opacity=".7"/>
+    <circle cx="65" cy="48" r="1" fill="#06B6FF" opacity=".8"/>
+    <circle cx="88" cy="12" r="1.2" fill="#EC4899" opacity=".7"/>
+  </pattern>
+</defs>
+
+<rect width="1200" height="300" rx="22" fill="url(#gb-bg)"/>
+<rect width="1200" height="300" rx="22" fill="url(#gb-stars)"/>
+<circle cx="980" cy="135" r="125" fill="#7C3AED" opacity=".08"/>
+<circle cx="980" cy="135" r="88" fill="none" stroke="#7C3AED" stroke-opacity=".25"/>
+<circle cx="980" cy="135" r="110" fill="none" stroke="#06B6FF" stroke-opacity=".2" stroke-dasharray="3 10"/>
+
+<g transform="translate(70 68)">
+  <text x="0" y="0" fill="#06B6FF" font-family="Arial,sans-serif" font-size="15" letter-spacing="4">STELLAR UNIVERSE / COMMUNITY</text>
+  <text x="0" y="66" fill="#F4F7FF" font-family="Arial,sans-serif" font-size="48" font-weight="700" letter-spacing="1">GUESTBOOK</text>
+  <text x="2" y="104" fill="#A9B6D2" font-family="Arial,sans-serif" font-size="19">A little space for your words, thoughts and kind messages.</text>
+  <rect x="0" y="135" width="245" height="38" rx="19" fill="#06B6FF" fill-opacity=".09" stroke="#06B6FF" stroke-opacity=".4"/>
+  <circle cx="20" cy="154" r="4" fill="#06B6FF"/>
+  <text x="34" y="159" fill="#D9E9FF" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">YOUR WORDS MATTER</text>
+</g>
+
+<g transform="translate(730 48)">
+  <rect x="15" y="12" width="300" height="190" rx="18" fill="#06B6FF" opacity=".08" filter="url(#gb-glow)"/>
+  <rect x="0" y="0" width="300" height="190" rx="18" fill="url(#gb-card)" stroke="#6476A5" stroke-opacity=".45"/>
+  <path d="M0 20 Q0 0 20 0 H280 Q300 0 300 20" fill="none" stroke="url(#gb-line)" stroke-width="3"/>
+  <circle cx="35" cy="39" r="13" fill="#06B6FF" fill-opacity=".2" stroke="#06B6FF" stroke-opacity=".7"/>
+  <path d="M29 39 Q35 30 41 39 Q35 47 29 39Z" fill="#9DE5FF"/>
+  <text x="58" y="36" fill="#EAF3FF" font-family="Arial,sans-serif" font-size="13" font-weight="700">A NOTE FROM THE COSMOS</text>
+  <text x="25" y="83" fill="#D8E2F5" font-family="Arial,sans-serif" font-size="15">“Keep creating things that</text>
+  <text x="25" y="106" fill="#D8E2F5" font-family="Arial,sans-serif" font-size="15">make the universe brighter.”</text>
+  <path d="M25 132 H275" stroke="#7484A5" stroke-opacity=".3"/>
+  <text x="25" y="158" fill="#06B6FF" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.5">A FELLOW EXPLORER</text>
+  <text x="275" y="158" text-anchor="end" fill="#EC4899" font-family="Arial,sans-serif" font-size="15">✦</text>
+</g>
+
+<g transform="translate(1080 85)" fill="none" stroke="url(#gb-line)" stroke-width="2">
+  <path d="M0 0 L20 20 L0 40 L-20 20 Z" opacity=".8"/>
+  <path d="M0 62 L12 74 L0 86 L-12 74 Z" opacity=".5"/>
+</g>
+<path d="M0 296 H1200" stroke="url(#gb-line)" stroke-width="4"/>
+</svg>
