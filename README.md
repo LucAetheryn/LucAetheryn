@@ -12,7 +12,6 @@ Instagram ·
 TikTok
 
 </div>  
----
 
 <div align="center">  
   <picture>  
@@ -43,15 +42,9 @@ A few principles
     <source media="(max-width: 600px)" srcset="assets/mobile/about.svg">  
     <img src="assets/section/about.svg" alt="About" width="100%">  
   </picture>  
-  <picture>  
-    <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/about.svg">  
-    <img src="assets/section-panels/about.svg" alt="About panel" width="100%">  
   </picture>  
   <img src="assets/desk.svg" alt="Creative workspace" width="100%">  
 </div>  
----
-
-Journey
 
 <div align="center">  
   <picture>  
