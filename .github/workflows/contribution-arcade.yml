@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   generate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
 
     steps:
@@ -33,23 +33,30 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
 
       - name: Generate 3D contribution graphs
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-        uses: yoshi389111/github-profile-3d-contrib@0.9.3
 
       - name: Collect 3D SVGs
         shell: bash
         run: |
           mkdir -p dist
 
-          if [ -d "profile-3d-contrib" ]; then
-            find profile-3d-contrib -maxdepth 1 -type f -name "*.svg" \
-              -exec cp {} dist/ \;
+          if [ ! -d "profile-3d-contrib" ]; then
+            echo "3D contribution output directory not found."
+            exit 1
           fi
 
-          echo "Generated SVG files:"
-          find dist -maxdepth 1 -type f -name "*.svg" -print
+          find profile-3d-contrib -maxdepth 1 -type f -name "*.svg" \
+            -exec cp {} dist/ \;
+
+          if ! find profile-3d-contrib -maxdepth 1 -type f -name "*.svg" | grep -q .; then
+            echo "No 3D SVG files were generated."
+            exit 1
+          fi
+
+          echo "3D SVG files collected successfully."
 
       - name: Make Pac-Man and Breakout SVGs responsive
         shell: bash
@@ -80,7 +87,7 @@ jobs:
 
               tag = match.group(0)
 
-              if "viewBox" not in tag:
+              if not re.search(r'\bviewBox\s*=', tag):
                   width_match = re.search(
                       r'\bwidth=["\']([\d.]+)(?:px)?["\']',
                       tag
@@ -113,13 +120,15 @@ jobs:
       - name: Verify generated SVG files
         shell: bash
         run: |
+          echo "Generated SVG files:"
+          find dist -maxdepth 1 -type f -name "*.svg" -print
+
           if ! find dist -maxdepth 1 -type f -name "*.svg" | grep -q .; then
             echo "No SVG files were generated."
             exit 1
           fi
 
-          echo "All generated SVG files:"
-          ls -lh dist/*.svg
+          echo "SVG verification completed."
 
       - name: Publish generated SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v4
