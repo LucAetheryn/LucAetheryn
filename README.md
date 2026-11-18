@@ -1,3 +1,4 @@
+
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/header.svg">
@@ -24,11 +25,13 @@
 </div>
 
 ## About
+
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/about.svg">
     <img src="assets/section/about.svg" alt="About" width="100%">
   </picture>
+
   <img src="assets/desk.svg" alt="Creative workspace" width="100%">
 </div>
 
@@ -52,15 +55,13 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
 ---
 
 ## Journey
+
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/journey.svg">
     <img src="assets/section/journey.svg" alt="Journey" width="100%">
   </picture>
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/journey.svg">
-    <img src="assets/section-panels/journey.svg" alt="Journey panel" width="100%">
-  </picture>
+
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/timeline.svg">
     <img src="assets/timeline.svg" alt="Personal journey timeline" width="100%">
@@ -75,10 +76,6 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/projects.svg">
     <img src="assets/section/projects.svg" alt="Projects" width="100%">
-  </picture>
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/projects.svg">
-    <img src="assets/section-panels/projects.svg" alt="Selected projects" width="100%">
   </picture>
 </div>
 
@@ -109,17 +106,15 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
     <source media="(max-width: 600px)" srcset="assets/mobile/stack.svg">
     <img src="assets/section/stack.svg" alt="Technology Stack" width="100%">
   </picture>
+
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/tech-stack-matrix.svg">
-    <img src="assets/tech-stack-matrix.svg" alt="Technology stack matrix" width="100%">
+    <img src="assets/tech-stack-matrix.svg" alt="Technology Stack Matrix" width="100%">
   </picture>
-</div>
 
-
-<div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/marquee.svg">
-    <img src="assets/marquee.svg" alt="Technology and tools marquee" width="100%">
+    <img src="assets/marquee.svg" alt="Technology and Tools Marquee" width="100%">
   </picture>
 </div>
 
@@ -130,15 +125,17 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/ai.svg">
-    <img src="assets/section-panels/ai.svg" alt="AI toolbox panel" width="100%">
+    <img src="assets/section-panels/ai.svg" alt="AI Toolbox Panel" width="100%">
   </picture>
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/mobile/ai-orbit.svg">
-    <img src="assets/ai-orbit.svg" alt="AI workflow orbit" width="100%">
-  </picture>
+
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/ai-toolbox.svg">
-    <img src="assets/ai-toolbox.svg" alt="AI toolbox" width="100%">
+    <img src="assets/ai-toolbox.svg" alt="AI Toolbox" width="100%">
+  </picture>
+
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/mobile/ai-orbit.svg">
+    <img src="assets/ai-orbit.svg" alt="AI Workflow Orbit" width="100%">
   </picture>
 </div>
 
@@ -160,25 +157,24 @@ My current AI-assisted workflow includes:
     <source media="(max-width: 600px)" srcset="assets/mobile/stats.svg">
     <img src="assets/section/stats.svg" alt="GitHub Statistics" width="100%">
   </picture>
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/stats.svg">
-    <img src="assets/section-panels/stats.svg" alt="GitHub activity panel" width="100%">
-  </picture>
 </div>
 
 <div align="center">
-  <img src="tokyonight/0-profile-details.svg" alt="GitHub profile details" width="100%">
-  <img src="tokyonight/1-repos-per-language.svg" alt="Repositories per language" width="49%">
-  <img src="tokyonight/2-most-commit-language.svg" alt="Most committed languages" width="49%">
-  <img src="tokyonight/3-stats.svg" alt="GitHub statistics" width="100%">
-  <img src="tokyonight/4-productive-time.svg" alt="Productive time" width="100%">
+  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" alt="GitHub Profile Details" width="100%">
+
+  <img src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Repositories per Language" width="49%">
+  <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most Committed Languages" width="49%">
+
+  <img src="profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub Statistics" width="100%">
+
+  <img src="profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive Time" width="100%">
 </div>
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake.svg">
-    <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake.svg" alt="GitHub contribution snake" width="100%">
+    <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake.svg" alt="GitHub Contribution Snake" width="100%">
   </picture>
 </div>
 
@@ -191,12 +187,10 @@ My current AI-assisted workflow includes:
     <source media="(max-width: 600px)" srcset="assets/mobile/arcade.svg">
     <img src="assets/section/arcade.svg" alt="Contribution Arcade" width="100%">
   </picture>
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/arcade.svg">
-    <img src="assets/section-panels/arcade.svg" alt="Arcade panel" width="100%">
-  </picture>
-  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/pacman-contribution-graph.svg" alt="Pac-Man contribution graph" width="100%">
-  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/breakout-contribution-graph.svg" alt="Breakout contribution graph" width="100%">
+
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/pacman-contribution-graph.svg" alt="Pac-Man Contribution Graph" width="100%">
+
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/breakout-contribution-graph.svg" alt="Breakout Contribution Graph" width="100%">
 </div>
 
 ---
@@ -221,7 +215,7 @@ Leave a message in the [GitHub Guestbook](https://github.com/LucAetheryn/LucAeth
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/socials.svg">
-    <img src="assets/section-panels/socials.svg" alt="Social links" width="100%">
+    <img src="assets/section-panels/socials.svg" alt="Social Links" width="100%">
   </picture>
 
   [GitHub](https://github.com/LucAetheryn) ·
@@ -233,8 +227,9 @@ Leave a message in the [GitHub Guestbook](https://github.com/LucAetheryn/LucAeth
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/break.svg">
-    <img src="assets/break.svg" alt="Thank you for visiting" width="100%">
+    <img src="assets/break.svg" alt="Thank You for Visiting" width="100%">
   </picture>
+
   <img src="assets/footer.svg" alt="Create, Explore, Evolve" width="100%">
 
   *Designing ideas · Building experiences · Exploring what’s next*
