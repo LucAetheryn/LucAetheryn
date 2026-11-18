@@ -1,16 +1,16 @@
 # Asset map
 
-| File | Purpose |
+| Asset | Purpose |
 |---|---|
-| `header.svg` | Hero desktop |
-| `mobile/header.svg` | Hero mobile |
-| `sections/*.svg` | Desktop section headers |
-| `mobile/*.svg` | Mobile section headers and orbital artwork |
-| `projects/*.svg` | Project cards |
-| `desk.svg` | Creator workstation illustration |
+| `header.svg` / `mobile/header.svg` | Desktop and mobile profile hero |
+| `section-panels/*.png` | Reliable desktop section title panels |
+| `section-panels/mobile/*.png` | Mobile section title panels |
+| `tech-stack-matrix.png` | Complete grouped technology stack |
+| `mobile/tech-stack-matrix.png` | Mobile technology stack |
+| `ai-toolbox.png` | Four AI tools with roles |
+| `mobile/ai-toolbox.png` | Mobile AI toolbox |
+| `projects/*.svg` | Seven branded project cards |
 | `timeline.svg` | Journey timeline |
-| `marquee.svg` | Technology toolkit strip |
-| `ai-orbit.svg` | Animated orbital AI illustration |
-| `city.svg` | Closing skyline illustration |
-| `divider.svg` | Animated divider |
-| `footer.svg` | Closing brand artwork |
+| `ai-orbit.svg` | Supporting orbital artwork |
+| `arcade-preview.png` | Local fallback until dynamic contribution assets are generated |
+| `desk.svg`, `city.svg`, `footer.svg` | Creator workstation and closing illustrations |
