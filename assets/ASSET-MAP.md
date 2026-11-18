@@ -56,11 +56,15 @@ No.| Category| Asset Name| Desktop Path| Mobile Path| Format| Description
 53| Contribution 3D| Gitblock| "output/profile-gitblock.svg"| —| SVG| Git block graph
 54| Contribution 3D| Night View| "output/profile-night-view.svg"| —| SVG| Night view graph
 55| Summary Card| Profile Details| "tokyonight/0-profile-details.svg"| —| SVG| Profile details
-56| Summary Card| Repos per Language| "tokyonight/1-repos-per-language.svg"| —| SVG| Repository languages
-57| Summary Card| Most Commit Language| "tokyonight/2-most-commit-language.svg"| —| SVG| Commit language distribution
+56| Summary Card| Repos per Language| "tokyonight/1-repos-per-language.svg"| —| SVG| Repository language distribution
+57| Summary Card| Most Commit Language| "tokyonight/2-most-commit-language.svg"| —| SVG| Most committed languages
 58| Summary Card| Statistics| "tokyonight/3-stats.svg"| —| SVG| GitHub statistics
 59| Summary Card| Productive Time| "tokyonight/4-productive-time.svg"| —| SVG| Productive time
 
----
+Notes
 
-Notes: "output/" refers to the dedicated GitHub Actions branch, not a directory inside "main". PNG fallbacks remain until README references are migrated and verified.
+- "output/" refers to the dedicated GitHub Actions branch, not a directory inside "main".
+- "tokyonight/" contains generated summary cards on "main".
+- PNG fallbacks must remain until README references are migrated and verified.
+- SVG is the primary format for profile artwork.
+- Desktop and mobile assets must retain their designated paths.
