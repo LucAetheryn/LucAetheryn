@@ -17,7 +17,10 @@ jobs:
   update:
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      contains(github.event.issue.labels.*.name, 'guestbook')
+      (
+        github.event_name == 'issues' &&
+        contains(github.event.issue.labels.*.name, 'guestbook')
+      )
 
     runs-on: ubuntu-latest
 
