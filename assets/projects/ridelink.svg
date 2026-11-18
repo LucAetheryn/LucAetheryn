@@ -1,7 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="190" viewBox="0 0 560 190" role="img" aria-label="RIDELINK">
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080D1B"/><stop offset=".55" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/></linearGradient>
- <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#06B6FF"><animate attributeName="stop-color" values="#06B6FF;#7C3AED;#EC4899;#06B6FF" dur="8s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#EC4899"><animate attributeName="stop-color" values="#EC4899;#06B6FF;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="stars" width="110" height="90" patternUnits="userSpaceOnUse"><circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/><circle cx="72" cy="54" r=".9" fill="#06B6FF" opacity=".8"/><circle cx="95" cy="12" r="1" fill="#EC4899" opacity=".7"/></pattern>
-</defs><rect width="560" height="190" rx="18" fill="#0D1427" stroke="#7C3AED" stroke-opacity=".6" stroke-width="2"/><circle cx="485" cy="45" r="30" fill="#7C3AED" opacity=".16"/><circle cx="485" cy="45" r="9" fill="#7C3AED"/><text x="28" y="47" fill="#7C3AED" font-family="Arial" font-size="13" letter-spacing="3">PROJECT / CONCEPT</text><text x="28" y="91" fill="#fff" font-family="Arial" font-size="27" font-weight="700">RIDELINK</text><text x="28" y="122" fill="#A9B9D8" font-family="Arial" font-size="15">Smart Riding Ecosystem</text><text x="28" y="157" fill="#D3DDF0" font-family="Arial" font-size="13">Connected experiences for riders and convoys</text></svg>
+  <defs>
+    <linearGradient id="ride-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0A1019"/>
+      <stop offset=".55" stop-color="#111F2B"/>
+      <stop offset="1" stop-color="#172B38"/>
+    </linearGradient>
+    <linearGradient id="ride-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#35D6F2">
+        <animate attributeName="stop-color" values="#35D6F2;#8BE9C8;#55A8FF;#35D6F2" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#8BE9C8">
+        <animate attributeName="stop-color" values="#8BE9C8;#55A8FF;#35D6F2;#8BE9C8" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <pattern id="ride-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#35D6F2" stroke-opacity=".065"/>
+    </pattern>
+    <filter id="ride-glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="560" height="190" rx="18" fill="url(#ride-bg)"/>
+  <rect width="560" height="190" rx="18" fill="url(#ride-grid)"/>
+  <rect x="1" y="1" width="558" height="188" rx="17" fill="none" stroke="url(#ride-grad)" stroke-opacity=".7" stroke-width="1.5"/>
+
+  <!-- Connected riders / convoy motif -->
+  <g transform="translate(485 77)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="34" fill="#35D6F2" opacity=".055" stroke="#35D6F2" stroke-opacity=".22"/>
+    <path d="M-24 4 Q0 -18 24 4" stroke="#35D6F2" stroke-opacity=".45" stroke-width="1.3" stroke-dasharray="3 4"/>
+    <path d="M-16 19 L-10 8 L0 3 L10 8 L16 19" stroke="url(#ride-grad)" stroke-width="2.2" filter="url(#ride-glow)"/>
+    <circle cx="-16" cy="20" r="5" stroke="#8BE9C8" stroke-width="2"/>
+    <circle cx="16" cy="20" r="5" stroke="#8BE9C8" stroke-width="2"/>
+    <circle cx="0" cy="-9" r="5" fill="#35D6F2" stroke="none"/>
+    <circle cx="-22" cy="-13" r="3" fill="#8BE9C8" stroke="none"/>
+    <circle cx="22" cy="-13" r="3" fill="#8BE9C8" stroke="none"/>
+    <path d="M-18 -13 H-8 M8 -13 H18" stroke="#8BE9C8" stroke-opacity=".7" stroke-width="1.3"/>
+  </g>
+
+  <text x="28" y="47" fill="#35D6F2" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">PROJECT / CONCEPT</text>
+
+  <text x="28" y="91" fill="url(#ride-grad)" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="1">RIDELINK</text>
+
+  <text x="28" y="122" fill="#A9C5D1" font-family="Arial, sans-serif" font-size="15">Smart Riding Ecosystem</text>
+
+  <text x="28" y="157" fill="#D9E7ED" font-family="Arial, sans-serif" font-size="13">Connected experiences for riders and convoys</text>
+</svg>
