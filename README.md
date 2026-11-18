@@ -1,145 +1,162 @@
-<div align="center">  <img src="https://capsule-render.vercel.app/api?type=waving&height=250&color=0:0F172A,30:312E81,65:7C3AED,100:06B6FF&text=LUCKY%20PRADITYA&fontColor=EAEAF2&fontSize=48&fontAlignY=38&desc=VISUAL%20%26%20AI%20ENGINEER%20ENTHUSIAST&descAlignY=58&descSize=15&animation=fadeIn" width="100%" />  <br/>  <h1>✦ Welcome to My Universe ✦</h1>  <h3>Designing Ideas. Engineering Possibilities.</h3>  <img src="https://readme-typing-svg.demolab.com?font=Space+Mono&weight=500&size=17&duration=2800&pause=900&color=06B6FF&center=true&vCenter=true&width=650&lines=Visual+Designer+%26+Illustrator;Exploring+Creative+Technology;Building+Digital+Experiences;Experimenting+with+AI+%26+Development;Turning+Ideas+into+Possibilities" alt="Animated introduction" />  <br/>  <img src="https://img.shields.io/badge/CREATIVE%20TECHNOLOGY-0F172A?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/DESIGN%20×%20ENGINEERING-312E81?style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/AI%20EXPLORATION-7C3AED?style=for-the-badge&logoColor=white" /><br/><br/>
+<div align="center">
+  <picture>
+    <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/header.svg">
+    <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/header.svg" width="100%" alt="Lucky Praditya — Stellar Universe">
+  </picture>
+</div>
 
-  <a href="https://github.com/LucAetheryn">
-    <img src="https://img.shields.io/badge/Explore%20My%20GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" />
-  </a></div>---
+<div align="center">
 
-<div align="center">  <h2>🌌 A LITTLE INTRODUCTION</h2>  <img src="https://readme-typing-svg.demolab.com?font=Space+Mono&size=20&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Hello%2C+World!;Halo%2C+semesta!;Welcome+aboard!" alt="Animated greeting" /></div>👨‍🚀 About Me
+[![GitHub](https://img.shields.io/badge/GitHub-LucAetheryn-0F172A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LucAetheryn)
+[![Profile](https://img.shields.io/badge/PROFILE-OPEN-06B6FF?style=for-the-badge&logo=星星&logoColor=white)](https://github.com/LucAetheryn)
 
-Hello! I'm Lucky Praditya — a creative individual exploring the intersection of visual design, technology, and artificial intelligence.
+**Visual Designer & Illustrator · Visual & AI Engineer Enthusiast**
 
-My interests go beyond creating something that simply looks good. I enjoy understanding how things work, experimenting with new possibilities, and transforming ideas into meaningful digital experiences.
-
-My journey moves between visual creativity and technical exploration:
-
-- 🎨 Visual Design & Illustration — crafting visual identities and creative experiences.
-- 💻 Development — exploring frontend technologies and building applications.
-- 🤖 Artificial Intelligence — experimenting with AI tools and development workflows.
-- 🚀 Independent Projects — turning personal ideas into real digital products.
-- 🌌 Stellar Universe — my creative technology identity.
-
-«I believe imagination gives ideas their direction, while engineering gives them a way to exist.»
-
----
-
-✦ Inside My Universe
-
-<div align="center">  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0F172A,50:312E81,100:7C3AED&height=100&section=header&text=IMAGINE%20%E2%80%A2%20CREATE%20%E2%80%A2%20BUILD&fontColor=EAEAF2&fontSize=22&animation=fadeIn" width="100%" /></div>I enjoy working across different creative and technical disciplines. These are the principles that guide my exploration.
-
-✦ Principle| My Perspective
-Creativity| Every meaningful creation starts with an idea.
-Engineering| Understanding how things work and making them functional.
-Exploration| Staying curious and experimenting with new possibilities.
-Purpose| Building things that solve problems and create value.
-
----
-
-🚀 Project Constellation
-
-A universe of independent ideas, experiments, and digital products.
-
-<div align="center">  <table>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>🌌 Stellar Universe</h3>
-        <img src="https://img.shields.io/badge/CREATIVE%20TECHNOLOGY-312E81?style=flat-square" />
-        <p>A personal creative technology identity and portfolio exploring the intersection of visual design, development, and AI.</p>
-        <sub>Visual Identity · Portfolio · Creative Technology</sub>
-      </td>
-      <td width="50%" valign="top">
-        <h3>✨ LUMORA</h3>
-        <img src="https://img.shields.io/badge/PERSONAL%20LIFE%20OS-312E81?style=flat-square" />
-        <p>A Personal Life Operating System designed to bring different aspects of everyday life into one organized experience.</p>
-        <sub>Productivity · Organization · Life Management</sub>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>💎 Nuvio Finance</h3>
-        <img src="https://img.shields.io/badge/PERSONAL%20FINANCE%20OS-312E81?style=flat-square" />
-        <p>A Personal Finance Operating System focused on making personal financial management more organized and understandable.</p>
-        <sub>Finance · Tracking · Financial Management</sub>
-      </td>
-      <td width="50%" valign="top">
-        <h3>🌙 AFTER</h3>
-        <img src="https://img.shields.io/badge/PERSONAL%20LIFE%20ARCHIVE-312E81?style=flat-square" />
-        <p>A private space to preserve personal memories, photographs, places, reflections, and meaningful moments.</p>
-        <sub>Memories · Personal Archive · Digital Experience</sub>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <h3>🏍️ RideLink</h3>
-        <img src="https://img.shields.io/badge/SMART%20RIDING-312E81?style=flat-square" />
-        <p>A Smart Riding and Convoy Ecosystem concept exploring connected riding experiences.</p>
-        <sub>Mobility · Riding · Connectivity</sub>
-      </td>
-      <td width="50%" valign="top">
-        <h3>👓 VISORA</h3>
-        <img src="https://img.shields.io/badge/BUSINESS%20MANAGEMENT-312E81?style=flat-square" />
-        <p>An optical business management system designed to support operational workflows and business management.</p>
-        <sub>Business · Operations · Management System</sub>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" valign="top">
-        <h3>☪️ SAFaa</h3>
-        <img src="https://img.shields.io/badge/ISLAMIC%20MUSLIM%20COMPANION-312E81?style=flat-square" />
-        <p>An Islamic Muslim Companion concept intended to bring useful Islamic-oriented tools and experiences into one place.</p>
-        <sub>Islamic Lifestyle · Companion · Digital Tools</sub>
-      </td>
-    </tr>
-  </table><sub>Independent projects at different stages of exploration and development.</sub>
-
-</div>---
-
-🛠️ Technology Universe
-
-Tools and technologies I use, explore, and experiment with across my creative and development workflows.
-
-Programming & Development
-
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,vite,python,lua&theme=dark" />
-</p>Backend & Cloud Services
-
-<p>
-  <img src="https://skillicons.dev/icons?i=supabase,firebase&theme=dark" />
-  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white" />
-</p>Creative & Design Tools
-
-<p>
-  <img src="https://skillicons.dev/icons?i=figma,photoshop,illustrator&theme=dark" />
-</p>Development Environment & Workflow
-
-<p>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Replit-F26207?style=for-the-badge&logo=replit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google%20Stitch-4285F4?style=for-the-badge&logo=google&logoColor=white" />
-</p>AI Exploration
-
-<p>
-  <img src="https://img.shields.io/badge/AI%20Assisted%20Development-7C3AED?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/AI%20Design%20Workflows-312E81?style=for-the-badge&logoColor=white" />
-</p>---
-
-📡 GitHub Activity
-
-<div align="center">  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=LucAetheryn&show_icons=true&hide_border=true&bg_color=0F172A&title_color=06B6FF&icon_color=7C3AED&text_color=EAEAF2&ring_color=EC4899" />  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucAetheryn&layout=compact&hide_border=true&bg_color=0F172A&title_color=06B6FF&text_color=EAEAF2" /><br/><br/>
-
-  <img width="75%" src="https://streak-stats.demolab.com?user=LucAetheryn&hide_border=true&background=0F172A&ring=06B6FF&fire=EC4899&currStreakLabel=7C3AED&sideLabels=EAEAF2&dates=A6A6B3" /><br/><br/>
-
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LucAetheryn&bg_color=0F172A&color=EAEAF2&line=7C3AED&point=06B6FF&area=true&hide_border=true&custom_title=My%20Contribution%20Universe" width="100%" /></div>---
-
-🌠 Beyond the Stars
-
-<div align="center">  <img src="https://readme-typing-svg.demolab.com?font=Space+Mono&weight=500&size=18&duration=3000&pause=1000&color=06B6FF&center=true&vCenter=true&width=600&lines=Stay+curious.;Keep+exploring.;Create+something+meaningful.;The+universe+is+full+of+possibilities." alt="Closing animation" /><br/><br/>
-
-  <h2>✦ KEEP EXPLORING. KEEP CREATING. KEEP BUILDING. ✦</h2>  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6FF,45:7C3AED,100:0F172A&height=140&section=footer&animation=fadeIn" width="100%" /><sub>Designed with curiosity. Built with purpose.</sub>
-
-  <br/><sub>© Lucky Praditya · Stellar Universe</sub>
+*Designing ideas. Building experiences. Exploring what’s next.*
 
 </div>
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/about.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/about.svg" width="100%" alt="About">
+</picture>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/desk.svg" width="72%" alt="Creative workstation">
+</div>
+
+Hello! I'm **Lucky Praditya** — a visual designer and creator exploring the intersection of design, technology, and AI.
+
+I enjoy turning ideas into visual identities, interfaces, and digital products. My workflow moves between creative direction, UI/UX exploration, frontend development, and AI-assisted building. I care about both how something works and how it feels to use.
+
+**Currently exploring**
+- Visual design, illustration, and digital brand experiences.
+- Frontend development and product interface implementation.
+- AI-assisted workflows, rapid prototyping, and creative engineering.
+- Building independent digital products from concept to iteration.
+
+**A few principles**
+- Make it clear before making it complex.
+- Preserve the idea while improving the experience.
+- Build thoughtfully, test honestly, and keep learning.
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/journey.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/journey.svg" width="100%" alt="Journey">
+</picture>
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/timeline.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/timeline.svg" width="100%" alt="Creative journey timeline">
+</picture>
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/projects.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/projects.svg" width="100%" alt="Projects">
+</picture>
+
+<div align="center">
+  <a href="https://github.com/LucAetheryn"><img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/projects/stellar-universe.svg" width="48%" alt="Stellar Universe"></a>
+  <a href="https://github.com/LucAetheryn"><img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/projects/lumora.svg" width="48%" alt="Lumora"></a>
+  <a href="https://github.com/LucAetheryn"><img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/projects/nuvio-finance.svg" width="48%" alt="Nuvio Finance"></a>
+  <a href="https://github.com/LucAetheryn"><img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/projects/after.svg" width="48%" alt="AFTER"></a>
+  <a href="https://github.com/LucAetheryn"><img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/projects/ridelink.svg" width="48%" alt="RideLink"></a>
+  <a href="https://github.com/LucAetheryn"><img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/projects/visora.svg" width="48%" alt="VISORA"></a>
+  <a href="https://github.com/LucAetheryn"><img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/projects/safaa.svg" width="48%" alt="SAFaa"></a>
+</div>
+
+<div align="center">
+  <sub>These are projects and product concepts at different stages of exploration and development. Project cards will be linked to their dedicated repositories or live products when those URLs are ready.</sub>
+</div>
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/stack.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/stack.svg" width="100%" alt="Tech and creative stack">
+</picture>
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/marquee.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/marquee.svg" width="100%" alt="Technology and creative toolkit">
+</picture>
+
+**Development**  
+`HTML` · `CSS` · `JavaScript` · `TypeScript` · `React` · `Vite` · `Python` · `Lua`
+
+**Backend & platforms**  
+`Supabase` · `Firebase` · `Cloudinary` · `Git` · `GitHub` · `Replit`
+
+**Design & creative**  
+`Figma` · `Adobe Photoshop` · `Adobe Illustrator` · `Google Stitch`
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/ai.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/ai.svg" width="100%" alt="AI toolbox">
+</picture>
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/ai-orbit.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/ai-orbit.svg" width="100%" alt="AI-assisted workflow">
+</picture>
+
+I use AI as a creative and development accelerator — for research, ideation, prototyping, debugging, and iteration. The direction, decisions, and quality checks remain human-led.
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/stats.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/stats.svg" width="100%" alt="GitHub activity">
+</picture>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=LucAetheryn&show_icons=true&hide_border=true&bg_color=0D1427&title_color=06B6FF&icon_color=7C3AED&text_color=CBD5E1&ring_color=EC4899" height="170" alt="GitHub stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucAetheryn&layout=compact&hide_border=true&bg_color=0D1427&title_color=06B6FF&text_color=CBD5E1" height="170" alt="Top languages">
+  <img src="https://streak-stats.demolab.com?user=LucAetheryn&theme=transparent&hide_border=true&background=0D1427&ring=06B6FF&fire=EC4899&currStreakLabel=06B6FF&sideLabels=CBD5E1&dates=8293B5" width="90%" alt="GitHub streak">
+</div>
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/arcade.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/arcade.svg" width="100%" alt="Contribution arcade">
+</picture>
+
+**Contribution Snake**
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/guestbook.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/guestbook.svg" width="100%" alt="Guestbook">
+</picture>
+
+<div align="center">
+  <a href="https://github.com/LucAetheryn/LucAetheryn/issues/new?template=guestbook.yml">
+    <img src="https://img.shields.io/badge/✦_SIGN_THE_GUESTBOOK-7C3AED?style=for-the-badge&labelColor=0F172A" alt="Sign the guestbook">
+  </a>
+  <br>
+  <sub>Guestbook messages are published after GitHub Actions validates the submitted issue.</sub>
+</div>
+
+<!-- GUESTBOOK:START -->
+| Visitor | Message | Date |
+|:--|:--|:--:|
+| *Your message could be the first one here.* | Welcome to this little corner of the universe. | ✦ |
+<!-- GUESTBOOK:END -->
+
+<picture>
+  <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/mobile/break.svg">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/sections/break.svg" width="100%" alt="A creative pause">
+</picture>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/city.svg" width="100%" alt="Stellar city skyline">
+  <br><br>
+  **Thanks for visiting. See you among the stars.** ✦
+  <br>
+  <sub>Made with curiosity, creativity, and a little cosmic energy.</sub>
+</div>
+<img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/main/assets/footer.svg" width="100%" alt="Keep exploring">
+
+<details>
+  <summary>✦ A small easter egg</summary>
+  <br>
+  `> keep exploring`  
+  `> keep creating`  
+  `> repeat`
+</details>
