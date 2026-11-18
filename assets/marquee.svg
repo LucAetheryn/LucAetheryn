@@ -1,7 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="160" viewBox="0 0 1200 160" role="img" aria-label="Technology and creative toolkit">
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080D1B"/><stop offset=".55" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/></linearGradient>
- <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#06B6FF"><animate attributeName="stop-color" values="#06B6FF;#7C3AED;#EC4899;#06B6FF" dur="8s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#EC4899"><animate attributeName="stop-color" values="#EC4899;#06B6FF;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="stars" width="110" height="90" patternUnits="userSpaceOnUse"><circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/><circle cx="72" cy="54" r=".9" fill="#06B6FF" opacity=".8"/><circle cx="95" cy="12" r="1" fill="#EC4899" opacity=".7"/></pattern>
-</defs><rect width="1200" height="160" rx="18" fill="#0D1427"/><g><rect x="25" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="112" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">HTML</text></g><g><rect x="235" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="322" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">CSS</text></g><g><rect x="445" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="532" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">JavaScript</text></g><g><rect x="655" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="742" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">TypeScript</text></g><g><rect x="865" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="952" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">React</text></g><g><rect x="1075" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="1162" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Vite</text></g><g><rect x="1285" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="1372" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Python</text></g><g><rect x="1495" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="1582" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Lua</text></g><g><rect x="1705" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="1792" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Supabase</text></g><g><rect x="1915" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="2002" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Firebase</text></g><g><rect x="2125" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="2212" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Cloudinary</text></g><g><rect x="2335" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="2422" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Git</text></g><g><rect x="2545" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="2632" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">GitHub</text></g><g><rect x="2755" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="2842" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Replit</text></g><g><rect x="2965" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="3052" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Google Stitch</text></g><g><rect x="3175" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="3262" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Figma</text></g><g><rect x="3385" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="3472" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Photoshop</text></g><g><rect x="3595" y="38" width="175" height="76" rx="15" fill="#151F38" stroke="#263B62"/><text x="3682" y="84" text-anchor="middle" fill="#EAF2FF" font-family="Arial" font-size="17">Illustrator</text></g></svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="176" viewBox="0 0 1200 176"
+     role="img" aria-label="Animated technology stack with official brand icons">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080D1B"/>
+      <stop offset=".55" stop-color="#11152D"/>
+      <stop offset="1" stop-color="#24113D"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#06B6FF"/>
+      <stop offset=".5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="1200" height="176" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="176" rx="18" fill="url(#bg)"/>
+  <g clip-path="url(#clip)">
+    <path d="M0 87 H1200" stroke="#263B62" opacity=".55"/>
+
+    <!-- ROW 1: LEFT -->
+    <g>
+      <g>
+        <g id="row1">
+          <g transform="translate(12 15)">
+            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">HTML5</text>
+          </g>
+          <g transform="translate(162 15)">
+            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">CSS3</text>
+          </g>
+          <g transform="translate(312 15)">
+            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">JavaScript</text>
+          </g>
+          <g transform="translate(462 15)">
+            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>
+            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">TypeScript</text>
+          </g>
+          <g transform="translate(612 15)">
+            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">React</text>
+          </g>
+          <g transform="translate(762 15)">
+            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg"/>
+            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Vite</text>
+          </g>
+          <g transform="translate(912 15)">
+            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Python</text>
+          </g>
+          <g transform="translate(1062 15)">
+            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Java</text>
+          </g>
+        </g>
+        <use xlink:href="#row1" transform="translate(1200 0)"/>
+      </g>
+      <animateTransform attributeName="transform" type="translate"
+        from="0 0" to="-1200 0" dur="38s" repeatCount="indefinite"/>
+    </g>
+
+    
+<!-- ROW 2: RIGHT -->
+<g>
+  <g id="row2">
+    <g transform="translate(12 101)">
+      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Git</text>
+    </g>
+    <g transform="translate(162 101)">
+      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">GitHub</text>
+    </g>
+    <g transform="translate(312 101)">
+      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"/>
+      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">Supabase</text>
+    </g>
+    <g transform="translate(462 101)">
+      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/>
+      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">Firebase</text>
+    </g>
+    <g transform="translate(612 101)">
+      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"/>
+      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Figma</text>
+    </g>
+    <g transform="translate(762 101)">
+      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/replit/replit-original.svg"/>
+      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Replit</text>
+    </g>
+    <g transform="translate(912 101)">
+      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"/>
+      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">Photoshop</text>
+    </g>
+    <g transform="translate(1062 101)">
+      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
+      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"/>
+      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">Illustrator</text>
+    </g>
+  </g>
+  <use xlink:href="#row2" transform="translate(-1200 0)"/>
+  <animateTransform attributeName="transform" type="translate"
+    from="0 0" to="1200 0" dur="42s" repeatCount="indefinite"/>
+</g>
