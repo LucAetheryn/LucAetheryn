@@ -1,66 +1,145 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-label="AI Toolbox — A human-led workflow, accelerated by AI tools">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-label="My AI Universe">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#0B1022"/>
-      <stop offset=".55" stop-color="#11142B"/>
-      <stop offset="1" stop-color="#17112E"/>
+      <stop stop-color="#090914"/>
+      <stop offset=".55" stop-color="#111020"/>
+      <stop offset="1" stop-color="#1B1028"/>
     </linearGradient>
-    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="#EC4899"/>
-      <stop offset="1" stop-color="#FF4FA3"/>
+      <stop offset=".5" stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#06B6FF"/>
     </linearGradient>
-    <pattern id="stars" width="160" height="110" patternUnits="userSpaceOnUse">
-      <circle cx="12" cy="16" r="1.2" fill="#06B6FF"/>
-      <circle cx="70" cy="42" r=".9" fill="#DCEBFF"/>
-      <circle cx="132" cy="18" r="1.1" fill="#EC4899"/>
-      <circle cx="105" cy="88" r=".8" fill="#06B6FF"/>
-      <circle cx="35" cy="98" r=".7" fill="#DCEBFF"/>
-    </pattern>
+    <radialGradient id="core">
+      <stop stop-color="#A855F7" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity=".02"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1200" height="470" rx="20" fill="url(#bg)"/>
-  <rect width="1200" height="470" rx="20" fill="url(#stars)" opacity=".75"/>
+  <rect width="1200" height="470" rx="18" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1198" height="468" rx="17" fill="none" stroke="#44304F"/>
 
-  <text x="32" y="48" fill="#F1F5FF" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing=".5">AI TOOLBOX</text>
-  <text x="32" y="73" fill="#A8B6D4" font-family="Arial, sans-serif" font-size="16">A human-led workflow, accelerated by AI tools</text>
+  <!-- Terminal header -->
+  <circle cx="27" cy="25" r="5" fill="#EC4899"/>
+  <circle cx="45" cy="25" r="5" fill="#A855F7"/>
+  <circle cx="63" cy="25" r="5" fill="#06B6FF"/>
+  <text x="88" y="30" fill="#8B829E" font-family="monospace" font-size="13">LUCAETHERYN / AI-TOOLBOX</text>
+  <text x="1160" y="30" text-anchor="end" fill="#756B89" font-family="monospace" font-size="12">[ PERSONAL ECOSYSTEM ]</text>
+  <path d="M20 47 H1180" stroke="#392A48"/>
 
-  <!-- Card 01 -->
-  <g>
-    <rect x="24" y="100" width="557" height="161" rx="17" fill="#0E192F" stroke="#344765" stroke-width="1"/>
-    <rect x="42" y="116" width="44" height="44" rx="13" fill="#1B3455"/>
-    <text x="64" y="144" text-anchor="middle" fill="#06B6FF" font-family="Arial, sans-serif" font-size="16" font-weight="700">01</text>
-    <text x="100" y="139" fill="#F0F4FF" font-family="Arial, sans-serif" font-size="20" font-weight="700">CHATGPT</text>
-    <text x="44" y="191" fill="url(#pink)" font-family="Arial, sans-serif" font-size="16" font-weight="700">Thinking, planning &amp; problem-solving</text>
-    <text x="44" y="221" fill="#A8B6D4" font-family="Arial, sans-serif" font-size="14">Product requirements • prompt writing • architecture • debugging</text>
+  <text x="35" y="81" fill="#EC4899" font-family="monospace" font-size="14">&gt; initializing my-ai-universe</text>
+  <text x="35" y="125" fill="#F6F0FF" font-family="Arial,sans-serif" font-size="38" font-weight="700">My AI Universe</text>
+  <text x="35" y="151" fill="#A99BB9" font-family="monospace" font-size="12.5">A smarter workflow, built through curiosity and experimentation.</text>
+
+  <!-- Orbit illustration -->
+  <g transform="translate(235 310)">
+    <circle r="170" fill="url(#core)"/>
+    <circle r="145" fill="none" stroke="#54305E" stroke-width="1" stroke-dasharray="3 8"/>
+    <ellipse rx="153" ry="66" fill="none" stroke="#A855F7" stroke-opacity=".75" transform="rotate(-28)"/>
+    <ellipse rx="125" ry="105" fill="none" stroke="#EC4899" stroke-opacity=".55" transform="rotate(48)"/>
+    <ellipse rx="168" ry="112" fill="none" stroke="#06B6FF" stroke-opacity=".4" transform="rotate(-65)"/>
+
+    <!-- Central identity -->
+    <circle r="65" fill="#171126" stroke="url(#neon)" stroke-width="2" filter="url(#glow)"/>
+    <circle r="55" fill="none" stroke="#FFFFFF" stroke-opacity=".12"/>
+    <text x="0" y="12" text-anchor="middle" fill="#F8EEFF" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="34" font-weight="700">高弓</text>
+    <text x="0" y="34" text-anchor="middle" fill="#A99BB9" font-family="monospace" font-size="8" letter-spacing="2">AI CORE</text>
+
+    <!-- ChatGPT -->
+    <g transform="translate(-120 -82)">
+      <circle r="22" fill="#21152F" stroke="#EC4899"/>
+      <image href="https://cdn.simpleicons.org/openai/FFFFFF" x="-12" y="-12" width="24" height="24" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+
+    <!-- Gemini -->
+    <g transform="translate(20 -143)">
+      <circle r="22" fill="#21152F" stroke="#A855F7"/>
+      <image href="https://cdn.simpleicons.org/googlegemini/8E75B2" x="-12" y="-12" width="24" height="24" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+
+    <!-- Grok -->
+    <g transform="translate(133 -65)">
+      <circle r="22" fill="#21152F" stroke="#06B6FF"/>
+      <image href="https://cdn.simpleicons.org/grok/FFFFFF" x="-12" y="-12" width="24" height="24" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+
+    <!-- Perplexity -->
+    <g transform="translate(126 90)">
+      <circle r="22" fill="#21152F" stroke="#EC4899"/>
+      <image href="https://cdn.simpleicons.org/perplexity/20B8CD" x="-12" y="-12" width="24" height="24" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+
+    <!-- DeepSeek -->
+    <g transform="translate(-35 145)">
+      <circle r="22" fill="#21152F" stroke="#A855F7"/>
+      <image href="https://cdn.simpleicons.org/deepseek/4D6BFE" x="-12" y="-12" width="24" height="24" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+
+    <!-- Codex: OpenAI mark -->
+    <g transform="translate(-148 65)">
+      <circle r="22" fill="#21152F" stroke="#06B6FF"/>
+      <image href="https://cdn.simpleicons.org/openai/FFFFFF" x="-12" y="-12" width="24" height="24" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+
+    <circle cx="-165" cy="-25" r="3" fill="#EC4899" filter="url(#glow)"/>
+    <circle cx="165" cy="30" r="3" fill="#06B6FF" filter="url(#glow)"/>
+    <circle cx="48" cy="164" r="2" fill="#EC4899"/>
+    <circle cx="-52" cy="-168" r="2" fill="#06B6FF"/>
   </g>
 
-  <!-- Card 02 -->
-  <g>
-    <rect x="596" y="100" width="557" height="161" rx="17" fill="#0E192F" stroke="#344765" stroke-width="1"/>
-    <rect x="614" y="116" width="44" height="44" rx="13" fill="#1B3455"/>
-    <text x="636" y="144" text-anchor="middle" fill="#06B6FF" font-family="Arial, sans-serif" font-size="16" font-weight="700">02</text>
-    <text x="672" y="139" fill="#F0F4FF" font-family="Arial, sans-serif" font-size="20" font-weight="700">GOOGLE GEMINI</text>
-    <text x="616" y="191" fill="url(#pink)" font-family="Arial, sans-serif" font-size="16" font-weight="700">Visual exploration &amp; research</text>
-    <text x="616" y="221" fill="#A8B6D4" font-family="Arial, sans-serif" font-size="14">Reference analysis • creative direction • image-based ideation</text>
+  <!-- Assistants -->
+  <g font-family="monospace">
+    <text x="455" y="87" fill="#EC4899" font-size="14">// assistants</text>
+    <path d="M455 98 H1165" stroke="#49304E"/>
+    <g font-size="14" fill="#F0EAF7">
+      <rect x="455" y="111" width="132" height="34" rx="7" fill="#1B1428" stroke="#59334F"/>
+      <text x="521" y="133" text-anchor="middle">ChatGPT</text>
+      <rect x="598" y="111" width="132" height="34" rx="7" fill="#1B1428" stroke="#59334F"/>
+      <text x="664" y="133" text-anchor="middle">Gemini</text>
+      <rect x="741" y="111" width="132" height="34" rx="7" fill="#1B1428" stroke="#59334F"/>
+      <text x="807" y="133" text-anchor="middle">Grok</text>
+      <rect x="884" y="111" width="132" height="34" rx="7" fill="#1B1428" stroke="#59334F"/>
+      <text x="950" y="133" text-anchor="middle">Perplexity</text>
+      <rect x="1027" y="111" width="132" height="34" rx="7" fill="#1B1428" stroke="#59334F"/>
+      <text x="1093" y="133" text-anchor="middle">DeepSeek</text>
+    </g>
   </g>
 
-  <!-- Card 03 -->
-  <g>
-    <rect x="24" y="277" width="557" height="161" rx="17" fill="#0E192F" stroke="#344765" stroke-width="1"/>
-    <rect x="42" y="293" width="44" height="44" rx="13" fill="#1B3455"/>
-    <text x="64" y="321" text-anchor="middle" fill="#06B6FF" font-family="Arial, sans-serif" font-size="16" font-weight="700">03</text>
-    <text x="100" y="316" fill="#F0F4FF" font-family="Arial, sans-serif" font-size="20" font-weight="700">GOOGLE STITCH</text>
-    <text x="44" y="368" fill="url(#pink)" font-family="Arial, sans-serif" font-size="16" font-weight="700">AI-assisted UI/UX generation</text>
-    <text x="44" y="398" fill="#A8B6D4" font-family="Arial, sans-serif" font-size="14">Screen exploration • layout generation • design-to-code reference</text>
+  <!-- Coding agents and dev tools -->
+  <g font-family="monospace">
+    <text x="455" y="194" fill="#A855F7" font-size="14">// coding agents &amp; dev tools</text>
+    <path d="M455 205 H1165" stroke="#49304E"/>
+    <g font-size="14" fill="#F0EAF7">
+      <rect x="455" y="220" width="164" height="39" rx="7" fill="#17172B" stroke="#493A67"/>
+      <text x="537" y="245" text-anchor="middle">OpenCode</text>
+      <rect x="630" y="220" width="164" height="39" rx="7" fill="#17172B" stroke="#493A67"/>
+      <text x="712" y="245" text-anchor="middle">Pi</text>
+      <rect x="805" y="220" width="164" height="39" rx="7" fill="#17172B" stroke="#493A67"/>
+      <text x="887" y="245" text-anchor="middle">Codex</text>
+      <rect x="980" y="220" width="179" height="39" rx="7" fill="#17172B" stroke="#493A67"/>
+      <text x="1069" y="245" text-anchor="middle">Gemini CLI</text>
+
+      <rect x="455" y="274" width="164" height="39" rx="7" fill="#17172B" stroke="#493A67"/>
+      <text x="537" y="299" text-anchor="middle">GitHub Copilot</text>
+      <rect x="630" y="274" width="164" height="39" rx="7" fill="#17172B" stroke="#493A67"/>
+      <text x="712" y="299" text-anchor="middle">Cursor</text>
+      <rect x="805" y="274" width="164" height="39" rx="7" fill="#17172B" stroke="#493A67"/>
+      <text x="887" y="299" text-anchor="middle">Ollama</text>
+      <rect x="980" y="274" width="179" height="39" rx="7" fill="#17172B" stroke="#493A67"/>
+      <text x="1069" y="299" text-anchor="middle">Hugging Face</text>
+    </g>
   </g>
 
-  <!-- Card 04 -->
-  <g>
-    <rect x="596" y="277" width="557" height="161" rx="17" fill="#0E192F" stroke="#344765" stroke-width="1"/>
-    <rect x="614" y="293" width="44" height="44" rx="13" fill="#1B3455"/>
-    <text x="636" y="321" text-anchor="middle" fill="#06B6FF" font-family="Arial, sans-serif" font-size="16" font-weight="700">04</text>
-    <text x="672" y="316" fill="#F0F4FF" font-family="Arial, sans-serif" font-size="20" font-weight="700">REPLIT AGENT</text>
-    <text x="616" y="368" fill="url(#pink)" font-family="Arial, sans-serif" font-size="16" font-weight="700">AI-assisted implementation</text>
-    <text x="616" y="398" fill="#A8B6D4" font-family="Arial, sans-serif" font-size="14">Feature building • code iteration • debugging inside Replit</text>
-  </g>
+  <!-- Footer terminal status -->
+  <path d="M455 346 H1165" stroke="#49304E"/>
+  <text x="455" y="375" fill="#80748F" font-family="monospace" font-size="12">// human curiosity × artificial intelligence</text>
+  <text x="455" y="401" fill="#EC4899" font-family="monospace" font-size="12">&gt; tools ready</text>
+  <circle cx="1160" cy="397" r="4" fill="#06B6FF" filter="url(#glow)"/>
 </svg>
