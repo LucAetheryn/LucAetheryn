@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="GitHub Signals Desktop Panel">
+<defs>
+  <linearGradient id="sp-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#080D1B"/><stop offset=".58" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/>
+  </linearGradient>
+  <linearGradient id="sp-line">
+    <stop stop-color="#06B6FF"/><stop offset=".5" stop-color="#7C3AED"/><stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <pattern id="sp-stars" width="95" height="80" patternUnits="userSpaceOnUse">
+    <circle cx="13" cy="18" r="1.2" fill="#DCEBFF" opacity=".65"/>
+    <circle cx="70" cy="52" r="1" fill="#06B6FF" opacity=".7"/>
+  </pattern>
+</defs>
+<rect width="1200" height="340" rx="22" fill="url(#sp-bg)"/>
+<rect width="1200" height="340" rx="22" fill="url(#sp-stars)"/>
+<circle cx="1030" cy="155" r="145" fill="#7C3AED" opacity=".07"/>
+<text x="65" y="65" fill="#06B6FF" font-family="Arial,sans-serif" font-size="14" letter-spacing="4">THE DEVELOPER ACTIVITY LOG</text>
+<text x="65" y="119" fill="#F4F7FF" font-family="Arial,sans-serif" font-size="38" font-weight="700">EVERY COMMIT TELLS A STORY.</text>
+<text x="65" y="157" fill="#A9B6D2" font-family="Arial,sans-serif" font-size="17">A visual overview of the work, experiments and ideas behind the code.</text>
+
+<g transform="translate(65 195)">
+  <rect width="490" height="94" rx="14" fill="#151F38" stroke="#6476A5" stroke-opacity=".35"/>
+  <text x="20" y="27" fill="#A9B6D2" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">CONTRIBUTION ACTIVITY</text>
+  <g transform="translate(20 43)">
+    <rect x="0" y="0" width="12" height="12" rx="3" fill="#06B6FF"/>
+    <rect x="20" y="0" width="12" height="12" rx="3" fill="#1D527E"/>
+    <rect x="40" y="0" width="12" height="12" rx="3" fill="#7C3AED"/>
+    <rect x="60" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="80" y="0" width="12" height="12" rx="3" fill="#06B6FF" opacity=".55"/>
+    <rect x="100" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="120" y="0" width="12" height="12" rx="3" fill="#EC4899" opacity=".8"/>
+    <rect x="140" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="160" y="0" width="12" height="12" rx="3" fill="#7C3AED"/>
+    <rect x="180" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="200" y="0" width="12" height="12" rx="3" fill="#06B6FF"/>
+    <rect x="220" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="240" y="0" width="12" height="12" rx="3" fill="#EC4899"/>
+    <rect x="260" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="280" y="0" width="12" height="12" rx="3" fill="#06B6FF" opacity=".6"/>
+    <rect x="300" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="320" y="0" width="12" height="12" rx="3" fill="#7C3AED" opacity=".7"/>
+    <rect x="340" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="360" y="0" width="12" height="12" rx="3" fill="#06B6FF"/>
+    <rect x="380" y="0" width="12" height="12" rx="3" fill="#26314F"/>
+    <rect x="400" y="0" width="12" height="12" rx="3" fill="#EC4899" opacity=".7"/>
+  </g>
+</g>
+
+<g transform="translate(590 195)">
+  <rect width="245" height="94" rx="14" fill="#151F38" stroke="#6476A5" stroke-opacity=".35"/>
+  <text x="20" y="29" fill="#A9B6D2" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">CODE IN MOTION</text>
+  <path d="M20 68 L55 52 L85 60 L120 35 L155 48 L190 20 L220 31" fill="none" stroke="url(#sp-line)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="190" cy="20" r="4" fill="#EC4899"/>
+</g>
+
+<g transform="translate(870 195)">
+  <rect width="265" height="94" rx="14" fill="#151F38" stroke="#6476A5" stroke-opacity=".35"/>
+  <text x="20" y="29" fill="#A9B6D2" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">KEEP BUILDING</text>
+  <text x="20" y="63" fill="#F4F7FF" font-family="Arial,sans-serif" font-size="21" font-weight="700">IDEAS → IMPACT</text>
+</g>
+<path d="M0 336 H1200" stroke="url(#sp-line)" stroke-width="4"/>
+</svg>
