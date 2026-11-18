@@ -1,7 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Stellar night skyline">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Stellar Universe Cosmic City">
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080D1B"/><stop offset=".55" stop-color="#11152D"/><stop offset="1" stop-color="#24113D"/></linearGradient>
- <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#06B6FF"><animate attributeName="stop-color" values="#06B6FF;#7C3AED;#EC4899;#06B6FF" dur="8s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="#EC4899"><animate attributeName="stop-color" values="#EC4899;#06B6FF;#7C3AED;#EC4899" dur="8s" repeatCount="indefinite"/></stop></linearGradient>
- <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
- <pattern id="stars" width="110" height="90" patternUnits="userSpaceOnUse"><circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/><circle cx="72" cy="54" r=".9" fill="#06B6FF" opacity=".8"/><circle cx="95" cy="12" r="1" fill="#EC4899" opacity=".7"/></pattern>
-</defs><rect width="1200" height="220" rx="20" fill="url(#bg)"/><path d="M0 190 V120 H90 V165 H150 V85 H245 V170 H315 V105 H400 V190 H500 V130 H580 V170 H670 V75 H760 V190 H850 V120 H950 V165 H1030 V95 H1110 V190 H1200" fill="#111D39" stroke="#06B6FF" stroke-opacity=".55" stroke-width="2"/><path d="M0 195 H1200" stroke="url(#grad)" stroke-width="3"/><text x="600" y="45" text-anchor="middle" fill="#fff" font-family="Arial" font-size="20" letter-spacing="5">STELLAR UNIVERSE</text></svg>
+  <linearGradient id="city-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#080D1B"/><stop offset=".58" stop-color="#15152F"/><stop offset="1" stop-color="#24113D"/>
+  </linearGradient>
+  <linearGradient id="city-light" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#06B6FF"/><stop offset=".5" stop-color="#7C3AED"/><stop offset="1" stop-color="#EC4899"/>
+  </linearGradient>
+  <linearGradient id="city-building" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#26375B"/><stop offset="1" stop-color="#10172C"/>
+  </linearGradient>
+  <pattern id="city-stars" width="100" height="80" patternUnits="userSpaceOnUse">
+    <circle cx="13" cy="18" r="1.3" fill="#DCEBFF" opacity=".7"/>
+    <circle cx="72" cy="54" r="1" fill="#06B6FF" opacity=".8"/>
+    <circle cx="90" cy="12" r="1" fill="#EC4899" opacity=".7"/>
+  </pattern>
+</defs>
+
+<rect width="1200" height="360" rx="22" fill="url(#city-bg)"/>
+<rect width="1200" height="360" rx="22" fill="url(#city-stars)"/>
+
+<circle cx="600" cy="130" r="100" fill="#7C3AED" opacity=".08"/>
+<circle cx="600" cy="130" r="72" fill="none" stroke="#7C3AED" stroke-opacity=".3" stroke-dasharray="4 9"/>
+<circle cx="600" cy="130" r="45" fill="#06B6FF" opacity=".06"/>
+
+<g fill="url(#city-building)" stroke="#52648B" stroke-opacity=".45">
+  <path d="M0 235 L80 235 L80 145 L145 145 L145 235 L205 235 L205 115 L280 115 L280 235 L340 235 L340 170 L405 170 L405 235 L470 235 L470 95 L535 95 L535 235 L600 235 L600 155 L670 155 L670 235 L730 235 L730 120 L800 120 L800 235 L865 235 L865 165 L930 165 L930 235 L995 235 L995 105 L1070 105 L1070 235 L1130 235 L1130 150 L1200 150 L1200 360 L0 360 Z"/>
+</g>
+
+<g fill="#06B6FF" opacity=".75">
+  <path d="M98 164 H125 V170 H98 Z M98 184 H125 V190 H98 Z M220 138 H265 V144 H220 Z M220 160 H265 V166 H220 Z M490 119 H516 V125 H490 Z M490 141 H516 V147 H490 Z M750 145 H780 V151 H750 Z M750 168 H780 V174 H750 Z M1015 130 H1050 V136 H1015 Z M1015 152 H1050 V158 H1015 Z"/>
+</g>
+<g fill="#EC4899" opacity=".7">
+  <rect x="153" y="170" width="8" height="12" rx="2"/>
+  <rect x="363" y="187" width="8" height="12" rx="2"/>
+  <rect x="685" y="177" width="8" height="12" rx="2"/>
+  <rect x="880" y="185" width="8" height="12" rx="2"/>
+</g>
+
+<g fill="none" stroke="url(#city-light)" stroke-width="2" opacity=".8">
+  <path d="M0 236 Q300 210 600 236 T1200 236"/>
+  <path d="M0 260 Q300 240 600 260 T1200 260" opacity=".45"/>
+</g>
+<path d="M0 235 H1200" stroke="#06B6FF" stroke-opacity=".5" stroke-width="2"/>
+<path d="M0 360 L420 235 H780 L1200 360" fill="#7C3AED" opacity=".07"/>
+
+<g fill="#F4F7FF" font-family="Arial,sans-serif" text-anchor="middle">
+  <text x="600" y="295" font-size="20" font-weight="700" letter-spacing="5">A UNIVERSE OF POSSIBILITIES</text>
+  <text x="600" y="322" font-size="11" fill="#A9B9D8" letter-spacing="3">IMAGINE · CREATE · EXPLORE</text>
+</g>
+<path d="M0 356 H1200" stroke="url(#city-light)" stroke-width="4"/>
+</svg>
