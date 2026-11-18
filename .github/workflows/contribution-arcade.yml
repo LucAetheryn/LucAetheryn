@@ -8,10 +8,15 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: contribution-arcade
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+
     steps:
       - name: Generate Pac-Man and Breakout
         uses: abozanona/pacman-contribution-graph@main
@@ -28,32 +33,93 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
 
       - name: Generate 3D contribution graphs
-        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+        uses: yoshi389111/github-profile-3d-contrib@0.9.3
 
       - name: Collect 3D SVGs
+        shell: bash
         run: |
           mkdir -p dist
-          cp profile-3d-contrib/*.svg dist/
+
+          if [ -d "profile-3d-contrib" ]; then
+            find profile-3d-contrib -maxdepth 1 -type f -name "*.svg" \
+              -exec cp {} dist/ \;
+          fi
+
+          echo "Generated SVG files:"
+          find dist -maxdepth 1 -type f -name "*.svg" -print
 
       - name: Make Pac-Man and Breakout SVGs responsive
+        shell: bash
         run: |
           python3 - <<'PY'
-          import glob, re
-          for path in glob.glob("dist/pacman-*.svg") + glob.glob("dist/breakout-*.svg"):
-              source = open(path, encoding="utf-8").read()
-              match = re.search(r"<svg\\b[^>]*>", source)
+          import glob
+          import re
+          import sys
+
+          files = (
+              glob.glob("dist/pacman-*.svg")
+              + glob.glob("dist/breakout-*.svg")
+          )
+
+          if not files:
+              print("No Pac-Man or Breakout SVG files found.")
+              sys.exit(1)
+
+          for path in files:
+              with open(path, encoding="utf-8") as file:
+                  source = file.read()
+
+              match = re.search(r"<svg\b[^>]*>", source)
+
               if not match:
-                  continue
+                  print(f"Invalid SVG root element: {path}")
+                  sys.exit(1)
+
               tag = match.group(0)
+
               if "viewBox" not in tag:
-                  width = re.search(r'\\bwidth="([\\d.]+)', tag).group(1)
-                  height = re.search(r'\\bheight="([\\d.]+)', tag).group(1)
-                  source = source.replace(tag, tag[:-1] + f' viewBox="0 0 {width} {height}">', 1)
-                  open(path, "w", encoding="utf-8").write(source)
+                  width_match = re.search(
+                      r'\bwidth=["\']([\d.]+)(?:px)?["\']',
+                      tag
+                  )
+                  height_match = re.search(
+                      r'\bheight=["\']([\d.]+)(?:px)?["\']',
+                      tag
+                  )
+
+                  if not width_match or not height_match:
+                      print(f"Cannot determine SVG dimensions: {path}")
+                      sys.exit(1)
+
+                  width = width_match.group(1)
+                  height = height_match.group(1)
+
+                  updated_tag = (
+                      tag[:-1]
+                      + f' viewBox="0 0 {width} {height}">'
+                  )
+
+                  source = source.replace(tag, updated_tag, 1)
+
+              with open(path, "w", encoding="utf-8") as file:
+                  file.write(source)
+
+              print(f"Processed: {path}")
           PY
+
+      - name: Verify generated SVG files
+        shell: bash
+        run: |
+          if ! find dist -maxdepth 1 -type f -name "*.svg" | grep -q .; then
+            echo "No SVG files were generated."
+            exit 1
+          fi
+
+          echo "All generated SVG files:"
+          ls -lh dist/*.svg
 
       - name: Publish generated SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v4
