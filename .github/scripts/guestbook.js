@@ -216,9 +216,22 @@ module.exports = async ({ github, context }) => {
 
   // Acknowledge and close newly submitted Guestbook issues.
   if (
-    context.eventName === "issues" &&
-    context.payload.action === "opened"
-  ) {
+  context.eventName === "issues" &&
+  (
+    context.payload.action === "opened" ||
+    (
+      context.payload.action === "labeled" &&
+      context.payload.label?.name === "guestbook"
+    )
+  )
+) {
+  await acknowledgeSubmission({
+    github,
+    owner,
+    repo,
+    issue: context.payload.issue,
+  });
+  }
     await acknowledgeSubmission({
       github,
       owner,
