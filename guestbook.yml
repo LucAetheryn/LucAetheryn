@@ -1,0 +1,13 @@
+name: Sign the Stellar Guestbook
+description: Leave a short message on Lucky's profile
+title: "[Guestbook]: "
+labels: ["guestbook"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Your message
+      description: Keep it friendly and under 240 characters.
+      placeholder: Hello from my corner of the universe...
+    validations:
+      required: true
