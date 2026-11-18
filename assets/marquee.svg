@@ -1,124 +1,112 @@
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1200" height="176" viewBox="0 0 1200 176"
-     role="img" aria-label="Animated technology stack with official brand icons">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200"
+     height="230"
+     viewBox="0 0 1200 230"
+     role="img"
+     aria-label="Animated technology stack">
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#080D1B"/>
-      <stop offset=".55" stop-color="#11152D"/>
-      <stop offset="1" stop-color="#24113D"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#11102A"/>
     </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#06B6FF"/>
-      <stop offset=".5" stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#EC4899"/>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06B6FF"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#EC4899"/>
     </linearGradient>
-    <clipPath id="clip">
-      <rect width="1200" height="176" rx="18"/>
+
+    <clipPath id="viewport">
+      <rect width="1200" height="230" rx="18"/>
     </clipPath>
   </defs>
 
-  <rect width="1200" height="176" rx="18" fill="url(#bg)"/>
-  <g clip-path="url(#clip)">
-    <path d="M0 87 H1200" stroke="#263B62" opacity=".55"/>
+  <rect width="1200" height="230" rx="18" fill="url(#background)"/>
+  <rect x="0" y="0" width="1200" height="3" fill="url(#accent)"/>
 
-    <!-- ROW 1: LEFT -->
+  <g clip-path="url(#viewport)">
+    <g opacity=".12" fill="none" stroke="#06B6FF">
+      <circle cx="110" cy="60" r="45"/>
+      <circle cx="110" cy="60" r="65"/>
+      <circle cx="1050" cy="170" r="70"/>
+      <circle cx="1050" cy="170" r="90"/>
+    </g>
+
+    <text x="32" y="28" fill="#A6B4D0"
+          font-family="Arial,sans-serif" font-size="11"
+          letter-spacing="3">DEVELOPMENT &amp; CREATIVE TOOLKIT</text>
+
     <g>
+      <animateTransform attributeName="transform"
+        type="translate" from="0 0" to="-1200 0"
+        dur="32s" repeatCount="indefinite"/>
+
       <g>
-        <g id="row1">
-          <g transform="translate(12 15)">
-            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
-            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">HTML5</text>
-          </g>
-          <g transform="translate(162 15)">
-            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
-            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">CSS3</text>
-          </g>
-          <g transform="translate(312 15)">
-            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">JavaScript</text>
-          </g>
-          <g transform="translate(462 15)">
-            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/>
-            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">TypeScript</text>
-          </g>
-          <g transform="translate(612 15)">
-            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
-            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">React</text>
-          </g>
-          <g transform="translate(762 15)">
-            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg"/>
-            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Vite</text>
-          </g>
-          <g transform="translate(912 15)">
-            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Python</text>
-          </g>
-          <g transform="translate(1062 15)">
-            <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-            <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
-            <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Java</text>
-          </g>
-        </g>
-        <use xlink:href="#row1" transform="translate(1200 0)"/>
+        <image x="35" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
+        <image x="135" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+        <image x="235" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+        <image x="335" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"/>
+        <image x="435" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
+        <image x="535" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"/>
+        <image x="635" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"/>
+        <image x="735" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"/>
+        <image x="835" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
+        <image x="935" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
+        <image x="1035" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
+        <image x="1135" y="48" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
       </g>
-      <animateTransform attributeName="transform" type="translate"
-        from="0 0" to="-1200 0" dur="38s" repeatCount="indefinite"/>
     </g>
 
-    
-<!-- ROW 2: RIGHT -->
-<g>
-  <g id="row2">
-    <g transform="translate(12 101)">
-      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
-      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Git</text>
+    <g>
+      <animateTransform attributeName="transform"
+        type="translate" from="-1200 0" to="0 0"
+        dur="36s" repeatCount="indefinite"/>
+
+      <g>
+        <image x="35" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
+        <image x="135" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"/>
+        <image x="235" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"/>
+        <image x="335" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"/>
+        <image x="435" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"/>
+        <image x="535" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"/>
+        <image x="635" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-plain.svg"/>
+        <image x="735" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/aftereffects/aftereffects-original.svg"/>
+        <image x="835" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg"/>
+        <image x="935" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg"/>
+        <image x="1035" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"/>
+        <image x="1135" y="125" width="42" height="42"
+          xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
+      </g>
     </g>
-    <g transform="translate(162 101)">
-      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">GitHub</text>
-    </g>
-    <g transform="translate(312 101)">
-      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"/>
-      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">Supabase</text>
-    </g>
-    <g transform="translate(462 101)">
-      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/>
-      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">Firebase</text>
-    </g>
-    <g transform="translate(612 101)">
-      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"/>
-      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Figma</text>
-    </g>
-    <g transform="translate(762 101)">
-      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/replit/replit-original.svg"/>
-      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="15">Replit</text>
-    </g>
-    <g transform="translate(912 101)">
-      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg"/>
-      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">Photoshop</text>
-    </g>
-    <g transform="translate(1062 101)">
-      <rect width="132" height="58" rx="12" fill="#151F38" stroke="#263B62"/>
-      <image x="12" y="13" width="32" height="32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"/>
-      <text x="52" y="36" fill="#EAF2FF" font-family="Arial" font-size="13">Illustrator</text>
-    </g>
+
+    <text x="32" y="207" fill="#8290AA"
+      font-family="Arial,sans-serif" font-size="10"
+      letter-spacing="2">DESIGN · ENGINEERING · AI · DIGITAL PRODUCTS</text>
   </g>
-  <use xlink:href="#row2" transform="translate(-1200 0)"/>
-  <animateTransform attributeName="transform" type="translate"
-    from="0 0" to="1200 0" dur="42s" repeatCount="indefinite"/>
-</g>
+</svg>
