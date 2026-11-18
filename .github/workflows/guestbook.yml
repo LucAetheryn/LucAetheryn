@@ -1,1 +1,27 @@
-
+name: Update Guestbook
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: read
+jobs:
+  add-entry:
+    if: contains(github.event.issue.labels.*.name, 'guestbook') || startsWith(github.event.issue.title, '[Guestbook]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add validated guestbook entry
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          python .github/scripts/guestbook.py
+      - name: Commit profile update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: update guestbook"
+          git push
