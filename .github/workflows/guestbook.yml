@@ -1,27 +1,41 @@
 name: Update Guestbook
+
 on:
   issues:
-    types: [opened]
+    types: [opened, edited, deleted]
+  workflow_dispatch:
+
+concurrency:
+  group: guestbook
+  cancel-in-progress: false
+
 permissions:
   contents: write
-  issues: read
+  issues: write
+
 jobs:
-  add-entry:
-    if: contains(github.event.issue.labels.*.name, 'guestbook') || startsWith(github.event.issue.title, '[Guestbook]')
+  update:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'guestbook')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Add validated guestbook entry
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-          REPO: ${{ github.repository }}
-        run: |
-          python .github/scripts/guestbook.py
+
+      - name: Rebuild guestbook from labelled issues
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = require('./.github/scripts/guestbook.js');
+            await run({ github, context });
+
       - name: Commit profile update
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --cached --quiet || git commit -m "chore: update guestbook"
-          git push
+          if git diff --cached --quiet; then
+            echo "Guestbook is already up to date."
+          else
+            git commit -m "chore: update guestbook"
+            git pull --rebase origin main
+            git push
+          fi
