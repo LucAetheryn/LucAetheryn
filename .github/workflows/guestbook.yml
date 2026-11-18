@@ -15,10 +15,18 @@ permissions:
 
 jobs:
   update:
-    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'guestbook')
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.issue.labels.*.name, 'guestbook')
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Rebuild guestbook from labelled issues
         uses: actions/github-script@v7
@@ -28,14 +36,19 @@ jobs:
             await run({ github, context });
 
       - name: Commit profile update
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add README.md
+
           if git diff --cached --quiet; then
             echo "Guestbook is already up to date."
-          else
-            git commit -m "chore: update guestbook"
-            git pull --rebase origin main
-            git push
+            exit 0
           fi
+
+          git commit -m "chore: update guestbook"
+
+          git pull --rebase origin main
+          git push origin HEAD:main
