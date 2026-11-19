@@ -200,10 +200,12 @@ Leave a message in the [GitHub Guestbook](https://github.com/LucAetheryn/LucAeth
 ## Connect
 
 <div align="center">
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/socials.svg">
-    <img src="assets/section-panels/socials.svg" alt="Social Links" width="100%">
-  </picture>
+  <img src="assets/section-panels/social-cards/socials-header.svg" alt="Find me across the universe" width="640">
+
+  <a href="https://github.com/LucAetheryn"><img src="assets/section-panels/social-cards/social-github.svg" alt="GitHub" width="160"></a>
+  <a href="https://www.instagram.com/lucky.praditya?gwpx=MWNvMGJwOThnMnVuZg=="><img src="assets/section-panels/social-cards/social-instagram.svg" alt="Instagram" width="160"></a>
+  <a href="https://www.tiktok.com/@lucky.pradityaaa?_r=1&amp;_t=ZS-9BVtaE8LNT7"><img src="assets/section-panels/social-cards/social-tiktok.svg" alt="TikTok" width="160"></a>
+  <a href="https://www.linkedin.com/in/luckypraditya/"><img src="assets/section-panels/social-cards/social-linkedin.svg" alt="LinkedIn" width="160"></a>
 </div>
 
 <div align="center">
