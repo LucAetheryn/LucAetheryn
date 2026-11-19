@@ -200,12 +200,29 @@ Leave a message in the [GitHub Guestbook](https://github.com/LucAetheryn/LucAeth
 ## Connect
 
 <div align="center">
-  <img src="assets/section-panels/social-cards/socials-header.svg" alt="Find me across the universe" width="640">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/section-panels/social-cards/socials-header.svg">
+    <img src="assets/section-panels/social-cards/socials-header-desktop.svg" alt="Find me across the universe" width="100%">
+  </picture>
+</div>
 
-  <a href="https://github.com/LucAetheryn"><img src="assets/section-panels/social-cards/social-github.svg" alt="GitHub" width="160"></a>
-  <a href="https://www.instagram.com/lucky.praditya?gwpx=MWNvMGJwOThnMnVuZg=="><img src="assets/section-panels/social-cards/social-instagram.svg" alt="Instagram" width="160"></a>
-  <a href="https://www.tiktok.com/@lucky.pradityaaa?_r=1&amp;_t=ZS-9BVtaE8LNT7"><img src="assets/section-panels/social-cards/social-tiktok.svg" alt="TikTok" width="160"></a>
-  <a href="https://www.linkedin.com/in/luckypraditya/"><img src="assets/section-panels/social-cards/social-linkedin.svg" alt="LinkedIn" width="160"></a>
+<div align="center">
+  <a href="https://github.com/LucAetheryn"><picture>
+    <source media="(min-width: 601px)" srcset="assets/section-panels/social-cards/social-github-desktop.svg" width="200" height="80">
+    <img src="assets/section-panels/social-cards/social-github.svg" alt="GitHub" width="160">
+  </picture></a>
+  <a href="https://www.instagram.com/lucky.praditya?gwpx=MWNvMGJwOThnMnVuZg=="><picture>
+    <source media="(min-width: 601px)" srcset="assets/section-panels/social-cards/social-instagram-desktop.svg" width="200" height="80">
+    <img src="assets/section-panels/social-cards/social-instagram.svg" alt="Instagram" width="160">
+  </picture></a>
+  <a href="https://www.tiktok.com/@lucky.pradityaaa?_r=1&amp;_t=ZS-9BVtaE8LNT7"><picture>
+    <source media="(min-width: 601px)" srcset="assets/section-panels/social-cards/social-tiktok-desktop.svg" width="200" height="80">
+    <img src="assets/section-panels/social-cards/social-tiktok.svg" alt="TikTok" width="160">
+  </picture></a>
+  <a href="https://www.linkedin.com/in/luckypraditya/"><picture>
+    <source media="(min-width: 601px)" srcset="assets/section-panels/social-cards/social-linkedin-desktop.svg" width="200" height="80">
+    <img src="assets/section-panels/social-cards/social-linkedin.svg" alt="LinkedIn" width="160">
+  </picture></a>
 </div>
 
 <div align="center">
