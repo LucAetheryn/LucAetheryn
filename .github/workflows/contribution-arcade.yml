@@ -134,9 +134,9 @@ jobs:
           echo "--- Before ---"
           for f in "${FILES[@]}"; do
             echo "## $f"
-            grep -oE '<svg\b[^>]*>' "$f" | head -1
-            grep -oE '<rect\b[^>]*>' "$f" | head -3
-            grep -oiE 'background(-color)?[^;}"]*' "$f" | sort -u | head -5
+            { grep -oE '<svg\b[^>]*>' "$f" | sed -n '1p'; } || true
+            { grep -oE '<rect\b[^>]*>' "$f" | sed -n '1,2p'; } || true
+            { grep -oiE 'background(-color)?[^;}"]*' "$f" | sort -u | sed -n '1,5p'; } || true
           done
 
           python3 .github/scripts/make-transparent.py "${FILES[@]}"
