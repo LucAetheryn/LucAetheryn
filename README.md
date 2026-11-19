@@ -1,21 +1,9 @@
-
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/mobile/header.svg">
     <img src="assets/header.svg" alt="Lucky Praditya — Visual & AI Engineer Enthusiast" width="100%">
   </picture>
-
-  **Visual Designer & Illustrator · Visual & AI Engineer Enthusiast**
-
-  *Designing ideas. Building experiences. Exploring what’s next.*
-
-  [GitHub](https://github.com/LucAetheryn) ·
-  [LinkedIn](https://www.linkedin.com/in/luckypraditya/) ·
-  [Instagram](https://www.instagram.com/lucky.praditya?gwpx=MWNvMGJwOThnMnVuZg==) ·
-  [TikTok](https://www.tiktok.com/@lucky.pradityaaa?_r=1&_t=ZS-9BVtaE8LNT7)
 </div>
-
----
 
 <div align="center">
   <picture>
@@ -34,6 +22,7 @@
 
   <img src="assets/desk.svg" alt="Creative workspace" width="100%">
 </div>
+
 
 Hello! I'm **Lucky Praditya** — a visual designer and creator exploring the intersection of design, technology, and AI.
 
@@ -170,13 +159,7 @@ My current AI-assisted workflow includes:
   <img src="profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive Time" width="100%">
 </div>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake.svg">
-    <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake.svg" alt="GitHub Contribution Snake" width="100%">
-  </picture>
-</div>
+
 
 ---
 
@@ -187,7 +170,11 @@ My current AI-assisted workflow includes:
     <source media="(max-width: 600px)" srcset="assets/mobile/arcade.svg">
     <img src="assets/section/arcade.svg" alt="Contribution Arcade" width="100%">
   </picture>
-
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake.svg">
+    <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/github-snake.svg" alt="GitHub Contribution Snake" width="100%">
+  </picture>
   <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/pacman-contribution-graph.svg" alt="Pac-Man Contribution Graph" width="100%">
 
   <img src="https://raw.githubusercontent.com/LucAetheryn/LucAetheryn/output/breakout-contribution-graph.svg" alt="Breakout Contribution Graph" width="100%">
@@ -217,11 +204,6 @@ Leave a message in the [GitHub Guestbook](https://github.com/LucAetheryn/LucAeth
     <source media="(max-width: 600px)" srcset="assets/section-panels/mobile/socials.svg">
     <img src="assets/section-panels/socials.svg" alt="Social Links" width="100%">
   </picture>
-
-  [GitHub](https://github.com/LucAetheryn) ·
-  [Instagram](https://www.instagram.com/lucky.praditya?gwpx=MWNvMGJwOThnMnVuZg==) ·
-  [TikTok](https://www.tiktok.com/@lucky.pradityaaa?_r=1&_t=ZS-9BVtaE8LNT7) ·
-  [LinkedIn](https://www.linkedin.com/in/luckypraditya/)
 </div>
 
 <div align="center">
