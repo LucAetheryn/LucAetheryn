@@ -18,6 +18,9 @@ jobs:
     timeout-minutes: 20
 
     steps:
+      - name: Checkout repository (for helper scripts)
+        uses: actions/checkout@v4
+
       - name: Generate Pac-Man and Breakout
         uses: abozanona/pacman-contribution-graph@main
         with:
@@ -117,6 +120,30 @@ jobs:
               print(f"Processed: {path}")
           PY
 
+      - name: Make Pac-Man and Breakout SVGs transparent
+        shell: bash
+        run: |
+          shopt -s nullglob
+          FILES=(dist/pacman-*.svg dist/breakout-*.svg)
+
+          if [ ${#FILES[@]} -eq 0 ]; then
+            echo "No Pac-Man or Breakout SVG files found."
+            exit 1
+          fi
+
+          echo "--- Before ---"
+          for f in "${FILES[@]}"; do
+            echo "## $f"
+            grep -oE '<svg\b[^>]*>' "$f" | head -1
+            grep -oE '<rect\b[^>]*>' "$f" | head -3
+            grep -oiE 'background(-color)?[^;}"]*' "$f" | sort -u | head -5
+          done
+
+          python3 .github/scripts/make-transparent.py "${FILES[@]}"
+
+          echo "--- After ---"
+          python3 .github/scripts/make-transparent.py --check "${FILES[@]}"
+
       - name: Verify generated SVG files
         shell: bash
         run: |
@@ -127,6 +154,10 @@ jobs:
             echo "No SVG files were generated."
             exit 1
           fi
+
+          shopt -s nullglob
+          python3 .github/scripts/make-transparent.py --check \
+            dist/pacman-*.svg dist/breakout-*.svg
 
           echo "SVG verification completed."
 
