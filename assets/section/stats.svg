@@ -14,7 +14,7 @@
 </defs>
 <rect width="1000" height="140" rx="18" fill="url(#sd-bg)"/>
 <rect width="1000" height="140" rx="18" fill="url(#sd-stars)"/>
-<text x="30" y="42" fill="#06B6FF" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">06 / STELLAR UNIVERSE</text>
+<text x="30" y="42" fill="#06B6FF" font-family="Arial,sans-serif" font-size="15" letter-spacing="3">05 / STELLAR UNIVERSE</text>
 <text x="30" y="88" fill="#F4F7FF" font-family="Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="1">GITHUB SIGNALS</text>
 <text x="970" y="76" text-anchor="end" fill="#9AA8C7" font-family="Arial,sans-serif" font-size="15">A live snapshot of code, consistency and contribution.</text>
 <path d="M0 137 H1000" stroke="url(#sd-grad)" stroke-width="3"/>
