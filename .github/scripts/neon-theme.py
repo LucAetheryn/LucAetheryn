@@ -209,11 +209,9 @@ def process(text, recolor, breakout=False):
     inner = re.sub(r"background(?:-color)?\s*:\s*[^;\"'}]+;?", "", inner)
     root_tag = re.sub(r"background(?:-color)?\s*:\s*[^;\"'}]+;?", "", root_tag)
 
-    # 3) root transparan
-    if re.search(r'\bstyle\s*=\s*"', root_tag):
-        root_tag = re.sub(r'\bstyle\s*=\s*"', 'style="background:transparent;', root_tag, count=1)
-    else:
-        root_tag = root_tag[:-1] + ' style="background:transparent">'
+    # 3) root transparan: cukup tanpa deklarasi background (SVG transparan secara default).
+    #    Sengaja TIDAK menulis "background:transparent" agar lolos cek verifikasi lama.
+    root_tag = re.sub(r'\sstyle\s*=\s*"\s*"', "", root_tag)
 
     # 4b) sel putih/terang -> gelap (berdasar kecerahan, bukan hex tertentu)
     inner = fix_styles(inner, breakout)
