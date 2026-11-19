@@ -1,9 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1200" height="1120"
-     viewBox="0 0 1200 1120"
-     role="img"
-     aria-label="Lucky Praditya technology and creative stack">
+     width="1200" height="1120" viewBox="0 0 1200 1120"
+     role="img" aria-label="Lucky Praditya Technology and Creative Stack">
 
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -20,21 +17,21 @@
       <stop offset="0%" stop-color="#17233B"/>
       <stop offset="100%" stop-color="#17152F"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+
     <style>
-      .heading { font-family: Arial,sans-serif; fill:#F1F5FF; font-weight:700; }
-      .sub { font-family: Arial,sans-serif; fill:#91A2C2; }
-      .category { font-family: Arial,sans-serif; fill:#EAF2FF; font-size:18px; font-weight:700; }
-      .item { font-family: Arial,sans-serif; fill:#C5D0E5; font-size:12px; }
-      .panel { fill:url(#panel); stroke:#33415F; stroke-width:1; }
-      .icon { width:34px; height:34px; }
+      .heading{font-family:Arial,sans-serif;fill:#F1F5FF;font-weight:700}
+      .sub{font-family:Arial,sans-serif;fill:#91A2C2}
+      .category{font-family:Arial,sans-serif;fill:#EAF2FF;font-size:18px;font-weight:700}
+      .item{font-family:Arial,sans-serif;fill:#C5D0E5;font-size:12px}
+      .panel{fill:url(#panel);stroke:#33415F;stroke-width:1}
+      .icon-bg{fill:#FFFFFF;opacity:.07}
+      .icon-letter{font-family:Arial,sans-serif;font-size:21px;font-weight:700;text-anchor:middle}
     </style>
+
+    <!-- Reusable icon tile -->
+    <g id="tile">
+      <rect width="52" height="52" rx="12" class="icon-bg"/>
+    </g>
   </defs>
 
   <rect width="1200" height="1120" rx="24" fill="url(#bg)"/>
@@ -47,18 +44,13 @@
     <circle cx="100" cy="1010" r="125"/>
   </g>
 
-  <text x="40" y="52" class="sub" font-size="11" letter-spacing="4">
-    LUC AETHERYN · PERSONAL TOOLKIT
-  </text>
-  <text x="40" y="105" class="heading" font-size="36">
-    Technology &amp; Creative Stack
-  </text>
-  <text x="40" y="135" class="sub" font-size="14">
-    The tools, technologies and platforms behind my creative journey.
-  </text>
+  <text x="40" y="52" class="sub" font-size="11" letter-spacing="4">LUC AETHERYN · PERSONAL TOOLKIT</text>
+  <text x="40" y="105" class="heading" font-size="36">Technology &amp; Creative Stack</text>
+  <text x="40" y="135" class="sub" font-size="14">The tools, technologies and platforms behind my creative journey.</text>
   <rect x="40" y="155" width="1120" height="2" rx="1" fill="url(#accent)" opacity=".8"/>
 
-  <!-- 01 PROGRAMMING LANGUAGES -->
+  <!-- Icon helper: each logo is drawn directly inside this SVG -->
+  <!-- 01 Programming Languages -->
   <g transform="translate(30 185)">
     <rect width="550" height="290" rx="18" class="panel"/>
     <rect width="4" height="290" rx="2" fill="#06B6FF"/>
@@ -66,36 +58,45 @@
     <text x="25" y="60" class="sub" font-size="11">Core languages and web fundamentals</text>
 
     <g transform="translate(48 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">TypeScript</text>
+      <use href="#tile"/>
+      <text x="26" y="34" class="icon-letter" fill="#3178C6">TS</text>
+      <text x="26" y="70" text-anchor="middle" class="item">TypeScript</text>
     </g>
     <g transform="translate(178 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">JavaScript</text>
+      <use href="#tile"/>
+      <text x="26" y="34" class="icon-letter" fill="#F7DF1E">JS</text>
+      <text x="26" y="70" text-anchor="middle" class="item">JavaScript</text>
     </g>
     <g transform="translate(308 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">HTML5</text>
+      <use href="#tile"/>
+      <path d="M10 10 L42 10 L39 40 L26 45 L13 40 Z" fill="#E44D26"/>
+      <text x="26" y="33" class="icon-letter" font-size="15" fill="#FFFFFF">5</text>
+      <text x="26" y="70" text-anchor="middle" class="item">HTML5</text>
     </g>
     <g transform="translate(438 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">CSS3</text>
+      <use href="#tile"/>
+      <path d="M10 10 L42 10 L39 40 L26 45 L13 40 Z" fill="#1572B6"/>
+      <text x="26" y="33" class="icon-letter" font-size="15" fill="#FFFFFF">3</text>
+      <text x="26" y="70" text-anchor="middle" class="item">CSS3</text>
     </g>
     <g transform="translate(48 180)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Python</text>
+      <use href="#tile"/>
+      <text x="26" y="34" class="icon-letter" fill="#FFD43B">Py</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Python</text>
     </g>
     <g transform="translate(178 180)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Java</text>
+      <use href="#tile"/>
+      <text x="26" y="34" class="icon-letter" fill="#F89820">Java</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Java</text>
     </g>
     <g transform="translate(308 180)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Lua</text>
+      <use href="#tile"/>
+      <text x="26" y="34" class="icon-letter" fill="#0000A0">Lua</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Lua</text>
     </g>
   </g>
 
-  <!-- 02 FRAMEWORKS -->
+  <!-- 02 Frameworks -->
   <g transform="translate(620 185)">
     <rect width="550" height="290" rx="18" class="panel"/>
     <rect width="4" height="290" rx="2" fill="#7C3AED"/>
@@ -103,28 +104,36 @@
     <text x="25" y="60" class="sub" font-size="11">Frontend, application and runtime ecosystem</text>
 
     <g transform="translate(48 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">React</text>
+      <use href="#tile"/>
+      <path d="M26 8 L45 42 L7 42 Z" fill="none" stroke="#61DAFB" stroke-width="3"/>
+      <circle cx="26" cy="25" r="5" fill="#61DAFB"/>
+      <text x="26" y="70" text-anchor="middle" class="item">React</text>
     </g>
     <g transform="translate(178 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Vite</text>
+      <use href="#tile"/>
+      <path d="M26 7 L46 42 L6 42 Z" fill="#646CFF"/>
+      <path d="M26 14 L35 35 L17 35 Z" fill="#FFD62E"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Vite</text>
     </g>
     <g transform="translate(308 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Next.js</text>
+      <use href="#tile"/>
+      <text x="26" y="35" class="icon-letter" fill="#FFFFFF">N</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Next.js</text>
     </g>
     <g transform="translate(438 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Tailwind CSS</text>
+      <use href="#tile"/>
+      <text x="26" y="35" class="icon-letter" fill="#38BDF8">TW</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Tailwind CSS</text>
     </g>
     <g transform="translate(48 180)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Node.js</text>
+      <use href="#tile"/>
+      <path d="M26 8 L43 17 L40 36 L26 45 L12 36 L9 17 Z" fill="#539E43"/>
+      <text x="26" y="33" class="icon-letter" font-size="14" fill="#FFFFFF">JS</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Node.js</text>
     </g>
   </g>
 
-  <!-- 03 BACKEND -->
+  <!-- 03 Backend -->
   <g transform="translate(30 495)">
     <rect width="550" height="290" rx="18" class="panel"/>
     <rect width="4" height="290" rx="2" fill="#EC4899"/>
@@ -132,32 +141,43 @@
     <text x="25" y="60" class="sub" font-size="11">Data, authentication and cloud storage</text>
 
     <g transform="translate(48 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Supabase</text>
+      <use href="#tile"/>
+      <circle cx="26" cy="26" r="16" fill="#3ECF8E"/>
+      <path d="M15 30 L21 20 L26 28 L31 20 L37 30" fill="none" stroke="#0B1020" stroke-width="3"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Supabase</text>
     </g>
     <g transform="translate(178 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">PostgreSQL</text>
+      <use href="#tile"/>
+      <path d="M13 13 L39 13 L39 39 L13 39 Z" fill="none" stroke="#699ECA" stroke-width="3"/>
+      <path d="M13 21 H39 M13 30 H39" stroke="#699ECA" stroke-width="2"/>
+      <text x="26" y="70" text-anchor="middle" class="item">PostgreSQL</text>
     </g>
     <g transform="translate(308 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Firebase</text>
+      <use href="#tile"/>
+      <path d="M26 7 L43 16 L40 37 L26 46 L12 37 L9 16 Z" fill="#FFCA28"/>
+      <path d="M26 7 L26 46 L12 37 L9 16 Z" fill="#FFA000"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Firebase</text>
     </g>
     <g transform="translate(438 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Firestore</text>
+      <use href="#tile"/>
+      <path d="M14 12 H38 V40 H14 Z" fill="none" stroke="#A8C7FA" stroke-width="3"/>
+      <path d="M19 20 H33 M19 27 H33 M19 34 H29" stroke="#A8C7FA" stroke-width="2"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Firestore</text>
     </g>
     <g transform="translate(48 180)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/clerk/6C47FF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Clerk</text>
+      <use href="#tile"/>
+      <text x="26" y="34" class="icon-letter" fill="#8B7BFF">C</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Clerk</text>
     </g>
     <g transform="translate(178 180)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/cloudinary/3448C5"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Cloudinary</text>
+      <use href="#tile"/>
+      <path d="M12 18 Q26 4 40 18 L36 35 Q26 46 16 35 Z" fill="#3448C5"/>
+      <text x="26" y="31" class="icon-letter" font-size="13" fill="#FFFFFF">C</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Cloudinary</text>
     </g>
   </g>
 
-  <!-- 04 TOOLS -->
+  <!-- 04 Tools -->
   <g transform="translate(620 495)">
     <rect width="550" height="290" rx="18" class="panel"/>
     <rect width="4" height="290" rx="2" fill="#06B6FF"/>
@@ -165,36 +185,48 @@
     <text x="25" y="60" class="sub" font-size="11">Development workflow and delivery</text>
 
     <g transform="translate(48 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Git</text>
+      <use href="#tile"/>
+      <path d="M13 15 L26 8 L39 15 L39 34 L26 42 L13 34 Z" fill="none" stroke="#F05032" stroke-width="3"/>
+      <path d="M13 15 L26 23 L39 15 M26 23 V42" stroke="#F05032" stroke-width="2"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Git</text>
     </g>
     <g transform="translate(178 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">GitHub</text>
+      <use href="#tile"/>
+      <path d="M26 8 A18 18 0 1 0 44 26 A9 9 0 0 1 26 17 A9 9 0 0 1 26 8" fill="#FFFFFF"/>
+      <text x="26" y="70" text-anchor="middle" class="item">GitHub</text>
     </g>
     <g transform="translate(308 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/replit/replit-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Replit</text>
+      <use href="#tile"/>
+      <path d="M12 10 L26 42 L40 10 L31 10 L26 25 L21 10 Z" fill="#F26207"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Replit</text>
     </g>
     <g transform="translate(438 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">VS Code</text>
+      <use href="#tile"/>
+      <path d="M26 8 L43 26 L26 44 L9 26 Z" fill="#007ACC"/>
+      <text x="26" y="33" class="icon-letter" font-size="14" fill="#FFFFFF">VS</text>
+      <text x="26" y="70" text-anchor="middle" class="item">VS Code</text>
     </g>
     <g transform="translate(48 180)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Actions</text>
+      <use href="#tile"/>
+      <path d="M26 8 L42 17 L42 35 L26 44 L10 35 L10 17 Z" fill="#2088FF"/>
+      <path d="M18 19 L26 15 L34 19 L34 33 L26 38 L18 33 Z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Actions</text>
     </g>
     <g transform="translate(178 180)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/capacitor/119EFF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Capacitor</text>
+      <use href="#tile"/>
+      <path d="M12 16 L26 8 L40 16 L40 36 L26 44 L12 36 Z" fill="#119EFF"/>
+      <text x="26" y="33" class="icon-letter" font-size="14" fill="#FFFFFF">C</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Capacitor</text>
     </g>
     <g transform="translate(308 180)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/pwa/5A0FC8"/>
-      <text x="17" y="51" text-anchor="middle" class="item">PWA</text>
+      <use href="#tile"/>
+      <path d="M26 8 L43 38 H9 Z" fill="#5A0FC8"/>
+      <text x="26" y="33" class="icon-letter" font-size="13" fill="#FFFFFF">P</text>
+      <text x="26" y="70" text-anchor="middle" class="item">PWA</text>
     </g>
   </g>
 
-  <!-- 05 CREATIVE -->
+  <!-- 05 Creative -->
   <g transform="translate(30 805)">
     <rect width="550" height="290" rx="18" class="panel"/>
     <rect width="4" height="290" rx="2" fill="#EC4899"/>
@@ -202,40 +234,58 @@
     <text x="25" y="60" class="sub" font-size="11">Visual design, illustration and motion</text>
 
     <g transform="translate(48 82)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Figma</text>
+      <use href="#tile"/>
+      <path d="M16 9 H36 Q44 9 44 17 V35 Q44 43 36 43 H16 Q8 43 8 35 V17 Q8 9 16 9" fill="#F24E1E"/>
+      <circle cx="18" cy="18" r="6" fill="#F24E1E" stroke="#FFFFFF"/>
+      <circle cx="34" cy="18" r="6" fill="#FF7262"/>
+      <circle cx="18" cy="34" r="6" fill="#A259FF"/>
+      <circle cx="34" cy="34" r="6" fill="#1ABCFE"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Figma</text>
     </g>
     <g transform="translate(178 82)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/adobephotoshop/31A8FF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Photoshop</text>
+      <use href="#tile"/>
+      <rect x="9" y="9" width="34" height="34" rx="7" fill="#31A8FF"/>
+      <text x="26" y="34" class="icon-letter" font-size="19" fill="#001E36">Ps</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Photoshop</text>
     </g>
     <g transform="translate(308 82)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/adobeillustrator/FF9A00"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Illustrator</text>
+      <use href="#tile"/>
+      <rect x="9" y="9" width="34" height="34" rx="7" fill="#FF9A00"/>
+      <text x="26" y="34" class="icon-letter" font-size="19" fill="#261300">Ai</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Illustrator</text>
     </g>
     <g transform="translate(438 82)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/adobeaftereffects/9999FF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">After Effects</text>
+      <use href="#tile"/>
+      <rect x="9" y="9" width="34" height="34" rx="7" fill="#9999FF"/>
+      <text x="26" y="34" class="icon-letter" font-size="19" fill="#1B1744">Ae</text>
+      <text x="26" y="70" text-anchor="middle" class="item">After Effects</text>
     </g>
     <g transform="translate(48 180)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/canva/00C4CC"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Canva</text>
+      <use href="#tile"/>
+      <path d="M12 14 Q26 5 40 14 L36 37 Q26 45 16 37 Z" fill="#00C4CC"/>
+      <text x="26" y="33" class="icon-letter" font-size="16" fill="#FFFFFF">C</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Canva</text>
     </g>
     <g transform="translate(178 180)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/capcut/FFFFFF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">CapCut</text>
+      <use href="#tile"/>
+      <path d="M12 12 H40 V40 H12 Z" fill="#FFFFFF"/>
+      <text x="26" y="33" class="icon-letter" font-size="15" fill="#101010">CC</text>
+      <text x="26" y="70" text-anchor="middle" class="item">CapCut</text>
     </g>
     <g transform="translate(308 180)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Blender</text>
+      <use href="#tile"/>
+      <circle cx="26" cy="26" r="18" fill="#F5792A"/>
+      <path d="M26 11 L39 35 L13 35 Z" fill="#FFFFFF" opacity=".9"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Blender</text>
     </g>
     <g transform="translate(438 180)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/alightmotion/FFFFFF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Alight Motion</text>
+      <use href="#tile"/>
+      <path d="M13 11 L40 26 L13 41 Z" fill="#FFFFFF"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Alight Motion</text>
     </g>
   </g>
 
-  <!-- 06 AI TOOLBOX -->
+  <!-- 06 AI Toolbox -->
   <g transform="translate(620 805)">
     <rect width="550" height="290" rx="18" class="panel"/>
     <rect width="4" height="290" rx="2" fill="#7C3AED"/>
@@ -243,28 +293,37 @@
     <text x="25" y="60" class="sub" font-size="11">AI assistants, coding and product design</text>
 
     <g transform="translate(48 82)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/openai/FFFFFF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">ChatGPT</text>
+      <use href="#tile"/>
+      <circle cx="26" cy="26" r="18" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M15 26 Q26 8 37 26 Q26 44 15 26 M26 8 Q15 26 26 44" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="26" y="70" text-anchor="middle" class="item">ChatGPT</text>
     </g>
     <g transform="translate(178 82)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/claude/D97757"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Claude</text>
+      <use href="#tile"/>
+      <path d="M26 8 Q23 20 11 26 Q23 32 26 44 Q29 32 41 26 Q29 20 26 8" fill="#D97757"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Claude</text>
     </g>
     <g transform="translate(308 82)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/googlegemini/8E75FF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Gemini</text>
+      <use href="#tile"/>
+      <path d="M26 7 L31 21 L45 26 L31 31 L26 45 L21 31 L7 26 L21 21 Z" fill="#8E75FF"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Gemini</text>
     </g>
     <g transform="translate(438 82)">
-      <image class="icon" xlink:href="https://cdn.simpleicons.org/githubcopilot/FFFFFF"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Copilot</text>
+      <use href="#tile"/>
+      <path d="M26 8 L42 17 L42 35 L26 44 L10 35 L10 17 Z" fill="#FFFFFF"/>
+      <text x="26" y="33" class="icon-letter" font-size="14" fill="#11152B">GH</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Copilot</text>
     </g>
     <g transform="translate(48 180)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Google Stitch</text>
+      <use href="#tile"/>
+      <path d="M26 8 L43 26 L26 44 L9 26 Z" fill="#4285F4"/>
+      <text x="26" y="33" class="icon-letter" font-size="14" fill="#FFFFFF">S</text>
+      <text x="26" y="70" text-anchor="middle" class="item">Google Stitch</text>
     </g>
     <g transform="translate(178 180)">
-      <image class="icon" xlink:href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/replit/replit-original.svg"/>
-      <text x="17" y="51" text-anchor="middle" class="item">Replit Agent</text>
+      <use href="#tile"/>
+      <path d="M12 10 L26 42 L40 10 L31 10 L26 25 L21 10 Z" fill="#F26207"/>
+      <text x="26" y="70" text-anchor="middle" class="item">Replit Agent</text>
     </g>
   </g>
 </svg>
