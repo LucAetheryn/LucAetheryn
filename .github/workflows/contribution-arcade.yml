@@ -134,37 +134,4 @@ jobs:
           echo "--- Before ---"
           for f in "${FILES[@]}"; do
             echo "## $f"
-            { grep -oE '<svg\b[^>]*>' "$f" | sed -n '1p'; } || true
-            { grep -oE '<rect\b[^>]*>' "$f" | sed -n '1,2p'; } || true
-            { grep -oiE 'background(-color)?[^;}"]*' "$f" | sort -u | sed -n '1,5p'; } || true
-          done
-
-          python3 .github/scripts/make-transparent.py "${FILES[@]}"
-
-          echo "--- After ---"
-          python3 .github/scripts/make-transparent.py --check "${FILES[@]}"
-
-      - name: Verify generated SVG files
-        shell: bash
-        run: |
-          echo "Generated SVG files:"
-          find dist -maxdepth 1 -type f -name "*.svg" -print
-
-          if ! find dist -maxdepth 1 -type f -name "*.svg" | grep -q .; then
-            echo "No SVG files were generated."
-            exit 1
-          fi
-
-          shopt -s nullglob
-          python3 .github/scripts/make-transparent.py --check \
-            dist/pacman-*.svg dist/breakout-*.svg
-
-          echo "SVG verification completed."
-
-      - name: Publish generated SVGs to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            { grep -oE '<svg\b[^>]*
