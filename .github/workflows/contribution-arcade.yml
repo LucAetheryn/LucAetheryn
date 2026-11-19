@@ -131,7 +131,52 @@ jobs:
             exit 1
           fi
 
-          echo "--- Before ---"
+          echo "--- Before (first 600 bytes of each file) ---"
           for f in "${FILES[@]}"; do
             echo "## $f"
-            { grep -oE '<svg\b[^>]*
+            head -c 600 "$f"
+            echo
+          done
+
+          python3 .github/scripts/make-transparent.py "${FILES[@]}"
+
+          echo "--- After ---"
+          python3 .github/scripts/make-transparent.py --check "${FILES[@]}"
+
+      - name: Apply neon theme to Pac-Man and Breakout SVGs
+        shell: bash
+        run: |
+          shopt -s nullglob
+          FILES=(dist/pacman-*.svg dist/breakout-*.svg)
+
+          if [ ${#FILES[@]} -eq 0 ]; then
+            echo "No Pac-Man or Breakout SVG files found."
+            exit 1
+          fi
+
+          python3 .github/scripts/neon-theme.py "${FILES[@]}"
+
+      - name: Verify generated SVG files
+        shell: bash
+        run: |
+          echo "Generated SVG files:"
+          find dist -maxdepth 1 -type f -name "*.svg" -print
+
+          if ! find dist -maxdepth 1 -type f -name "*.svg" | grep -q .; then
+            echo "No SVG files were generated."
+            exit 1
+          fi
+
+          shopt -s nullglob
+          python3 .github/scripts/make-transparent.py --check \
+            dist/pacman-*.svg dist/breakout-*.svg
+
+          echo "SVG verification completed."
+
+      - name: Publish generated SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
