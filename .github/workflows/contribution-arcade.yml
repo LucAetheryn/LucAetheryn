@@ -120,7 +120,7 @@ jobs:
               print(f"Processed: {path}")
           PY
 
-      - name: Make Pac-Man and Breakout SVGs transparent
+      - name: Transparent background and neon theme (Pac-Man and Breakout)
         shell: bash
         run: |
           shopt -s nullglob
@@ -131,28 +131,12 @@ jobs:
             exit 1
           fi
 
-          echo "--- Before (first 600 bytes of each file) ---"
+          echo "--- Before (first 300 bytes) ---"
           for f in "${FILES[@]}"; do
             echo "## $f"
-            head -c 600 "$f"
+            head -c 300 "$f"
             echo
           done
-
-          python3 .github/scripts/make-transparent.py "${FILES[@]}"
-
-          echo "--- After ---"
-          python3 .github/scripts/make-transparent.py --check "${FILES[@]}"
-
-      - name: Apply neon theme to Pac-Man and Breakout SVGs
-        shell: bash
-        run: |
-          shopt -s nullglob
-          FILES=(dist/pacman-*.svg dist/breakout-*.svg)
-
-          if [ ${#FILES[@]} -eq 0 ]; then
-            echo "No Pac-Man or Breakout SVG files found."
-            exit 1
-          fi
 
           python3 .github/scripts/neon-theme.py "${FILES[@]}"
 
@@ -167,9 +151,36 @@ jobs:
             exit 1
           fi
 
-          shopt -s nullglob
-          python3 .github/scripts/make-transparent.py --check \
-            dist/pacman-*.svg dist/breakout-*.svg
+          python3 - <<'PY'
+          import re, glob, sys, collections
+
+          bad = False
+          files = sorted(
+              glob.glob("dist/pacman-*.svg") + glob.glob("dist/breakout-*.svg")
+          )
+          if not files:
+              print("FAIL: no Pac-Man/Breakout SVG found")
+              sys.exit(1)
+
+          for f in files:
+              t = open(f, encoding="utf-8").read()
+              root = re.search(r"<svg\b[^>]*>", t).group(0)
+              fills = collections.Counter(
+                  re.findall(r'<rect\b[^>]*?fill="([^"]+)"', t)
+              )
+              print("==", f)
+              print("   root:", root[:160])
+              print("   rect fills:", fills.most_common(8))
+
+              if 'id="neon-glow"' not in t:
+                  print("   FAIL: neon filter missing")
+                  bad = True
+              if re.search(r'<rect\b[^>]*width="100%"', t):
+                  print("   FAIL: full-size background rect still present")
+                  bad = True
+
+          sys.exit(1 if bad else 0)
+          PY
 
           echo "SVG verification completed."
 
