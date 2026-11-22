@@ -70,12 +70,13 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
 
 <div align="center">
 
-| Project | Description |
+| Project | Description & Status |
 |---|---|
 | <img src="assets/projects/stellar-universe.svg" width="220" alt="Stellar Universe"> | **STELLAR UNIVERSE** — Personal brand, portfolio, and creative engineering. |
+| **[LUCKY PRADITYA](https://github.com/LucAetheryn/lucky-praditya)** | **Personal Connection Hub** — Personal identity website with a Control Center, Live Preview, Supabase-backed content management, and MFA-protected administration. **Delivered · Production configuration applied.** |
+| <img src="assets/projects/after.svg" width="220" alt="AFTER"> | **[AFTER](https://after.maxmunz905.workers.dev)** — Private, local-first life archive for journals, memories, timeline, collections, and encrypted media. **PWA deployed · [Private source repository](https://github.com/LucAetheryn/after).** |
 | <img src="assets/projects/lumora.svg" width="220" alt="LUMORA"> | **LUMORA** — Personal Life Operating System. |
 | <img src="assets/projects/nuvio-finance.svg" width="220" alt="Nuvio Finance"> | **NUVIO FINANCE** — Personal Finance OS. |
-| <img src="assets/projects/after.svg" width="220" alt="AFTER"> | **AFTER** — Personal Life Archive for memories and moments. |
 | <img src="assets/projects/ridelink.svg" width="220" alt="RideLink"> | **RIDELINK** — Smart Riding Ecosystem. |
 | <img src="assets/projects/visora.svg" width="220" alt="VISORA"> | **VISORA** — Optical Management System. |
 | <img src="assets/projects/safaa.svg" width="220" alt="SAFaa"> | **SAFaa** — Muslim Companion. |
@@ -83,7 +84,7 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
 </div>
 
 <p align="center">
-  <sub>These projects are at different stages of exploration and development. Dedicated repository and product links will be added when their public destinations are ready.</sub>
+  <sub>Lucky Praditya and AFTER are now featured as delivered projects. AFTER's live link opens the deployed PWA; its source repository is private. Other concepts remain part of the ongoing creative roadmap.</sub>
 </p>
 
 ---
