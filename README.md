@@ -73,8 +73,8 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
 | Project | Description & Status |
 |---|---|
 | <img src="assets/projects/stellar-universe.svg" width="220" alt="Stellar Universe"> | **STELLAR UNIVERSE** — Personal brand, portfolio, and creative engineering. |
-| **[LUCKY PRADITYA](https://github.com/LucAetheryn/lucky-praditya)** | **Personal Connection Hub** — Personal identity website with a Control Center, Live Preview, Supabase-backed content management, and MFA-protected administration. **Delivered · Production configuration applied.** |
-| <img src="assets/projects/after.svg" width="220" alt="AFTER"> | **[AFTER](https://after.maxmunz905.workers.dev)** — Private, local-first life archive for journals, memories, timeline, collections, and encrypted media. **PWA deployed · [Private source repository](https://github.com/LucAetheryn/after).** |
+| <img src="assets/projects/lucky-praditya.svg" width="220" alt="Lucky Praditya"> | **[LUCKY PRADITYA](https://github.com/LucAetheryn/lucky-praditya)** — Personal Connection Hub with a Control Center, Live Preview, Supabase-backed content management, and MFA-protected administration. **Delivered · Production configuration applied.** |
+| <img src="assets/projects/after.svg" width="220" alt="AFTER"> | **[AFTER](https://after.maxmunz905.workers.dev)** — Private, local-first life archive for journals, memories, timeline, collections, and encrypted media. **PWA deployed.** |
 | <img src="assets/projects/lumora.svg" width="220" alt="LUMORA"> | **LUMORA** — Personal Life Operating System. |
 | <img src="assets/projects/nuvio-finance.svg" width="220" alt="Nuvio Finance"> | **NUVIO FINANCE** — Personal Finance OS. |
 | <img src="assets/projects/ridelink.svg" width="220" alt="RideLink"> | **RIDELINK** — Smart Riding Ecosystem. |
@@ -84,7 +84,7 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
 </div>
 
 <p align="center">
-  <sub>Lucky Praditya and AFTER are now featured as delivered projects. AFTER's live link opens the deployed PWA; its source repository is private. Other concepts remain part of the ongoing creative roadmap.</sub>
+  <sub>Lucky Praditya and AFTER are now featured as delivered projects. AFTER's live link opens the deployed PWA. Other concepts remain part of the ongoing creative roadmap.</sub>
 </p>
 
 ---
