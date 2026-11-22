@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="190" viewBox="0 0 560 190" role="img" aria-label="LUCKY PRADITYA">
+  <defs>
+    <linearGradient id="lucky-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#090D18"/>
+      <stop offset=".55" stop-color="#111A2B"/>
+      <stop offset="1" stop-color="#182B43"/>
+    </linearGradient>
+    <linearGradient id="lucky-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#62D6FF">
+        <animate attributeName="stop-color" values="#62D6FF;#8B9CFF;#75E0D0;#62D6FF" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#A6B8FF">
+        <animate attributeName="stop-color" values="#A6B8FF;#75E0D0;#62D6FF;#A6B8FF" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <pattern id="lucky-grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#8EBBDF" stroke-opacity=".07" stroke-width=".8"/>
+      <circle cx="0" cy="0" r="1.1" fill="#62D6FF" opacity=".3"/>
+    </pattern>
+    <filter id="lucky-glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="560" height="190" rx="18" fill="url(#lucky-bg)"/>
+  <rect width="560" height="190" rx="18" fill="url(#lucky-grid)"/>
+  <rect x="1" y="1" width="558" height="188" rx="17" fill="none" stroke="url(#lucky-grad)" stroke-opacity=".7" stroke-width="1.5"/>
+
+  <!-- Connection motif: a personal identity at the center of a digital network -->
+  <g transform="translate(485 76)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="34" fill="#62D6FF" opacity=".045" stroke="#62D6FF" stroke-opacity=".2"/>
+    <circle r="25" stroke="url(#lucky-grad)" stroke-opacity=".35"/>
+    <path d="M-19 -4 L0 -17 L19 -4 L19 17 L0 27 L-19 17 Z" stroke="url(#lucky-grad)" stroke-width="1.5" opacity=".75"/>
+    <path d="M-12 9 V-10 H-2 C5 -10 7 -1 1 2 L-5 5 L8 15" stroke="url(#lucky-grad)" stroke-width="2.8"/>
+    <circle cx="-19" cy="-4" r="3" fill="#62D6FF" stroke="none" filter="url(#lucky-glow)"/>
+    <circle cx="19" cy="-4" r="3" fill="#A6B8FF" stroke="none" filter="url(#lucky-glow)"/>
+    <circle cx="0" cy="-17" r="2.5" fill="#75E0D0" stroke="none"/>
+    <circle cx="0" cy="27" r="2.5" fill="#62D6FF" stroke="none"/>
+    <circle cx="19" cy="17" r="2" fill="#A6B8FF" stroke="none"/>
+  </g>
+
+  <text x="28" y="47" fill="#62D6FF" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">PROJECT / PERSONAL PLATFORM</text>
+
+  <text x="28" y="91" fill="url(#lucky-grad)" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="1">LUCKY PRADITYA</text>
+
+  <text x="28" y="122" fill="#A9BCD2" font-family="Arial, sans-serif" font-size="15">Personal Website • Connection Hub</text>
+
+  <text x="28" y="157" fill="#D8E5F2" font-family="Arial, sans-serif" font-size="13">A personal space connecting identity, projects &amp; experiences</text>
+</svg>
