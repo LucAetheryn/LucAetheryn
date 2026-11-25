@@ -79,12 +79,12 @@ I enjoy turning ideas into visual identities, interfaces, and digital products. 
 | <img src="assets/projects/nuvio-finance.svg" width="220" alt="Nuvio Finance"> | **NUVIO FINANCE** — Personal Finance OS. |
 | <img src="assets/projects/ridelink.svg" width="220" alt="RideLink"> | **RIDELINK** — Smart Riding Ecosystem. |
 | <img src="assets/projects/visora.svg" width="220" alt="VISORA"> | **VISORA** — Optical Management System. |
-| <img src="assets/projects/safaa.svg" width="220" alt="SAFaa"> | **SAFaa** — Muslim Companion. |
+| <img src="assets/projects/safaa.svg" width="220" alt="SAFAA"> | **SAFAA** — Islamic lifestyle companion with prayer schedules, Qur’an audio, daily du’a, and hadith. **Completed.** |
 
 </div>
 
 <p align="center">
-  <sub>Lucky Praditya and AFTER are now featured as delivered projects. AFTER's live link opens the deployed PWA. Other concepts remain part of the ongoing creative roadmap.</sub>
+  <sub>Lucky Praditya, AFTER, and SAFAA are featured as completed projects. AFTER's live link opens the deployed PWA. Other concepts remain part of the ongoing creative roadmap.</sub>
 </p>
 
 ---
