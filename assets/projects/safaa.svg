@@ -40,11 +40,11 @@
     <circle cx="23" cy="-20" r="1.2" fill="#E4D5A2" stroke="none"/>
   </g>
 
-  <text x="28" y="47" fill="#B8D9A7" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">PROJECT / CONCEPT</text>
+  <text x="28" y="47" fill="#B8D9A7" font-family="Arial, sans-serif" font-size="13" letter-spacing="3">PROJECT / COMPLETED</text>
 
   <text x="28" y="91" fill="url(#safaa-grad)" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="2">SAFAA</text>
 
-  <text x="28" y="122" fill="#C1D0C2" font-family="Arial, sans-serif" font-size="15">Muslim Companion</text>
+  <text x="28" y="122" fill="#C1D0C2" font-family="Arial, sans-serif" font-size="15">Islamic Lifestyle Companion</text>
 
-  <text x="28" y="157" fill="#E5E9DD" font-family="Arial, sans-serif" font-size="13">A companion concept for everyday spiritual life</text>
+  <text x="28" y="157" fill="#E5E9DD" font-family="Arial, sans-serif" font-size="13">Prayer times • Qur’an audio • Du’a • Hadith</text>
 </svg>
